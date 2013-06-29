@@ -47,15 +47,6 @@ class AppUpgrade
 	private boolean mIsSilence = false;
 	private RemoteUpgrade mUpgrade = null;
 
-//	private Handler mHandler = new Handler()
-//	{
-//		@Override
-//		public void handleMessage(Message msg)
-//		{
-//			check();
-//		}
-//	};
-
 	private HttpResultCallback mHttpCallback = new HttpResultCallback()
 	{
 		float mark = 0;

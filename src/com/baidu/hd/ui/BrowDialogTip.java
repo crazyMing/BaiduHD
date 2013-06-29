@@ -9,7 +9,6 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.View.OnTouchListener;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -17,9 +16,9 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.baidu.hd.BrowserSpecActivity;
+import com.baidu.hd.R;
 import com.baidu.hd.log.Logger;
 import com.baidu.hd.util.Const.IntentExtraKey;
-import com.baidu.hd.R;
 public class BrowDialogTip {
 	
 	private Logger logger = new Logger("BrowDialogTip");

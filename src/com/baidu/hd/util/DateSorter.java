@@ -15,10 +15,10 @@ import com.baidu.hd.R;
 public class DateSorter {
 
 	/** TAG.*/
-    private static final String TAG = DateSorter.class.getSimpleName();
+    static final String TAG = DateSorter.class.getSimpleName();
     
     /** DEBUG switch.*/
-    private static final boolean DEBUG = false;
+    static final boolean DEBUG = false;
 
     /** must be >= 3 */
     public static final int DAY_COUNT = 3;

@@ -28,7 +28,6 @@ import com.baidu.hd.personal.PersonalConst;
 import com.baidu.hd.util.Const;
 import com.baidu.hd.util.ToastUtil;
 import com.baidu.hd.R;
-//import com.baidu.hd.MainTabActivity;
 
 public class RemoteUpgradeImp implements RemoteUpgrade {
 	Logger logger = new Logger("RemoteUpgradeImp");

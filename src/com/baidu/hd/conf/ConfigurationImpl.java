@@ -53,8 +53,6 @@ public class ConfigurationImpl implements Configuration {
 
 	private Field smallSiteSnifferUrl = new Field(
 			"http://idmap.p2sp.baidu.com/vsniffer?from=5&version=%s&pccode=%s&url=%s");
-//	private Field smallSiteSnifferUrl = new Field(
-//			"http://tjyx-testing-platqa1071.vm.baidu.com:8080/android/vsniffer.php?from=5&version=%s&pccode=%s&url=%s");
 	
 	private Field searchUrl = new Field(
 			"http://vsniffer.p2sp.baidu.com/vsniffer?from=5&version=%s&pccode=%s&url=%s");

@@ -36,7 +36,6 @@ class StatUploader {
 	}
 	
 	public void postStat(String message) {
-		// TODO
 		Log.d(TAG, "post stat" + message);
 	}
 	

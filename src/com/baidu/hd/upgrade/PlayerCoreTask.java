@@ -18,13 +18,13 @@ import android.view.Gravity;
 import android.widget.Toast;
 
 import com.baidu.hd.BaiduHD;
+import com.baidu.hd.R;
 import com.baidu.hd.conf.Configuration;
 import com.baidu.hd.ctrl.PopupDialog;
 import com.baidu.hd.ctrl.PopupDialog.ReturnType;
 import com.baidu.hd.detect.Detect;
 import com.baidu.hd.event.EventCenter;
 import com.baidu.hd.event.EventId;
-import com.baidu.hd.log.DebugLogger;
 import com.baidu.hd.log.Logger;
 import com.baidu.hd.net.HttpComm;
 import com.baidu.hd.net.HttpDownloader;
@@ -34,7 +34,6 @@ import com.baidu.hd.util.Const;
 import com.baidu.hd.util.PlayerTools;
 import com.baidu.hd.util.StringUtil;
 import com.baidu.hd.util.SystemUtil;
-import com.baidu.hd.R;
 
 class PlayerCoreTask extends Thread
 {

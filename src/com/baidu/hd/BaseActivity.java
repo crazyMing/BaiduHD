@@ -3,18 +3,12 @@ package com.baidu.hd;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
-import com.baidu.hd.MainTabActivity.MainTabResultArgs;
 import com.baidu.hd.ctrl.PopupDialog;
-import com.baidu.hd.event.EventCenter;
-import com.baidu.hd.event.EventId;
-import com.baidu.hd.invokeapp.HttpService;
 import com.baidu.hd.log.Logger;
 import com.baidu.hd.service.ServiceProvider;
-import com.baidu.hd.util.JudgeCompentAlive;
 import com.baidu.mobstat.StatService;
 
 public class BaseActivity extends FragmentActivity{
@@ -35,17 +29,6 @@ public class BaseActivity extends FragmentActivity{
     		getPlayerApp().createService(this);
     	}
     	
-    	// 启动调起app服务
-    	if (!JudgeCompentAlive.getInstance(getApplicationContext()).JudgeServiceAlive("com.baidu.hd.invokeapp.HttpService"))
-    	{
-    		logger.d("HttpService is stop try to start");
-    		Intent service = new Intent(this, HttpService.class);
-    		startService(service);
-    	}
-    	else 
-    	{
-    		logger.d("HttpService is start");
-    	}
     }
 
 	@Override

@@ -6,13 +6,12 @@ import android.os.Message;
 import android.view.Gravity;
 import android.widget.Toast;
 
+import com.baidu.hd.R;
 import com.baidu.hd.event.EventCenter;
 import com.baidu.hd.event.EventId;
-import com.baidu.hd.log.DebugLogger;
 import com.baidu.hd.log.Logger;
 import com.baidu.hd.player.CyberPlayerHolder;
 import com.baidu.hd.service.ServiceFactory;
-import com.baidu.hd.R;
 
 /**
  * 

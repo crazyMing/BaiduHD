@@ -5,11 +5,10 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
 
+import com.baidu.hd.R;
 import com.baidu.hd.debug.P2PDownloadView;
 import com.baidu.hd.debug.P2PSettingView;
 import com.baidu.hd.debug.TaskListView;
-import com.baidu.hd.test.RegionActivity;
-import com.baidu.hd.R;
 import com.baidu.player.download.DownloadServiceAdapter;
 
 class DebugView {
@@ -70,7 +69,7 @@ class DebugView {
 		}
 			break;
 		case Menu.FIRST + 3: {
-			mAccessor.getHost().startActivity(new Intent(mAccessor.getHost(), RegionActivity.class));
+			//mAccessor.getHost().startActivity(new Intent(mAccessor.getHost(), RegionActivity.class));
 		}
 			break;
 		case Menu.FIRST + 4: {

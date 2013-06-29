@@ -1,7 +1,6 @@
 package com.baidu.hd.web;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
@@ -14,7 +13,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
-import com.baidu.hd.MainTabActivity;
+import com.baidu.hd.R;
 import com.baidu.hd.log.Logger;
 import com.baidu.hd.module.Task;
 import com.baidu.hd.module.TaskFactory;
@@ -28,7 +27,6 @@ import com.baidu.hd.stat.Stat;
 import com.baidu.hd.stat.StatId;
 import com.baidu.hd.task.TaskManager;
 import com.baidu.hd.util.Const;
-import com.baidu.hd.R;
 
 public class UrlHandler {
 	
@@ -172,7 +170,6 @@ public class UrlHandler {
 			e.printStackTrace();
 			return;
 		}
-		MainTabActivity.setOnPauseAnimation(true);
 		startActivity(intent);
 		prompt("toSpec", intent);
 	}

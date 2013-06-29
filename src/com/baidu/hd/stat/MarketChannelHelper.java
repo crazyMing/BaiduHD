@@ -14,7 +14,7 @@ import android.content.Context;
 import android.content.res.AssetManager;
 
 /**
- * 更新记录�?
+ * 更新记录
  * 
  * 1.2 获取到渠道号后，进行了trim()处理
  * 1.1 增加了对channel id的缓存，避免了频繁的文件读写
@@ -23,8 +23,8 @@ import android.content.res.AssetManager;
  * */
 public class MarketChannelHelper {
     
-    private static String CHANNEL_PATH; /** 渠道号存储在本地安装目录的路�?*/
-    private static final String FILE_NAME = "channel";  /** 存储渠道号的文件�?*/
+    private static String CHANNEL_PATH; /** 渠道号存储在本地安装目录的路*/
+    private static final String FILE_NAME = "channel";  /** 存储渠道号的文件*/
     private Context mContext;
     private static MarketChannelHelper mInstance;
     private static String mChannelId = null;
@@ -62,7 +62,7 @@ public class MarketChannelHelper {
     }
 
     /**
-     * 浠庡畨瑁呭簲鐢ㄧ殑APK鍖呴噷璇诲彇娓犻亾鍙�?     * 骞跺皢娓犻亾鍙蜂俊鎭啓鍒版湰鍦扮殑瀹夎鐩綍涓�
+     * 浠庡畨瑁呭簲鐢ㄧ殑APK鍖呴噷璇诲彇娓犻亾鍙�?     * 骞跺皢娓犻亾鍙蜂俊鎭啓鍒版湰鍦扮殑瀹夎鐩綍涓�
      */
     private String getChannelIDFromPackage() {
 

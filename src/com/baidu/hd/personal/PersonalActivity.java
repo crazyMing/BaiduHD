@@ -10,27 +10,19 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 
 import com.baidu.hd.BaseActivity;
 import com.baidu.hd.MainActivity;
+import com.baidu.hd.R;
 import com.baidu.hd.detect.Detect;
 import com.baidu.hd.log.Logger;
-import com.baidu.hd.module.album.NetVideo;
-import com.baidu.hd.player.PlayerLauncher;
 import com.baidu.hd.stat.Stat;
 import com.baidu.hd.stat.StatId;
-import com.baidu.hd.stat.StatId.BrowPlay;
-import com.baidu.hd.test.RegionActivity;
-import com.baidu.hd.test.SiteActivity;
 import com.baidu.hd.ui.ViewDragableSpace;
 import com.baidu.hd.util.Const;
-import com.baidu.mobstat.StatService;
-import com.baidu.hd.R;
 
 public class PersonalActivity extends BaseActivity implements OnClickListener {
 	

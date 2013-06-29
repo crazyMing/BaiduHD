@@ -6,8 +6,6 @@ import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.content.Context;
 
-import com.baidu.hd.log.Logger;
-
 /*
  * @ClassName   : JudgeCompentAlive
  * @Description : 判断app,service是否在运行中
