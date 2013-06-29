@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings 中 about 页面布局文件 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <!-- 顶部标题栏 -->
+	<RelativeLayout android:id="@+id/float_title_layout"
+		style="@style/title_bar_background">
+		<!-- 返回按钮 -->
+		<Button android:id="@+id/btn_about_titlebar_back"
+		    style="@style/title_bar_btn_cancel"/>
+		<!-- 标题名称 -->
+		<TextView style="@style/title_bar_title"
+			android:text="关于" />
+	</RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" 
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            >
+		    <ImageView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="60dip"
+				android:layout_gravity="center_horizontal"
+				android:src="@drawable/ic_about"
+		        />
+		    
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dip"
+		        android:layout_gravity="center_horizontal"
+				android:textSize="20sp"
+				android:textColor="@color/settings_about_text_black"
+		        android:text="百度HD"
+				/>
+		    
+		    <TextView
+		        android:id="@+id/version_info"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dip"
+		        android:layout_gravity="center_horizontal"
+				android:textSize="12sp"
+				android:textColor="@color/settings_about_text_gray"
+				/>  
+				
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="25dip"
+		        android:layout_gravity="center_horizontal"
+				android:textSize="13sp"
+				android:textColor="@color/settings_about_text_gray"
+		        android:text="你想看的  这里都有" 
+				/>
+		    
+		    <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="80dip" 
+	            android:background="@color/settings_title_bg"
+	            android:orientation="vertical"
+	            >
+	            <View
+		             android:layout_width="fill_parent"
+		             android:layout_height="1.0px"
+		             android:background="@color/settings_title_divide" 
+		             />
+		         <TextView
+			          android:text="免责声明"
+			          style="@style/settings_title_text"
+			          />
+		         <View
+		             android:layout_width="fill_parent"
+		             android:layout_height="1.0px"
+		             android:background="@color/settings_title_divide" 
+		             />
+	        </LinearLayout>
+	        
+		    <TextView
+		        android:id="@+id/txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="10dip"
+		        android:layout_gravity="left"
+				android:textSize="14sp"
+				android:textColor="@color/settings_about_text_black"
+		        android:text="@string/dialog_disclaimer_content"
+				/>
+		    
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

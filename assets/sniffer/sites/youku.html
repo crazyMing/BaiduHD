@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <SCRIPT src="../jquery.js"></SCRIPT>
+  <SCRIPT src="../sniffer.js"></SCRIPT>
+ </HEAD>
+
+ <SCRIPT>
+
+	sniffer.siteName = 'youku';
+
+	function onStart() {
+
+		sniffer.getHtml( function(html) {
+
+			if(!getId(html)) { 
+				return;
+			}
+			sniffer.success('http://v.youku.com/player/getM3U8/vid/' + youku_id + '/type/mp4/v.m3u8');
+		});
+	}
+
+	function getId(html) {
+
+		sniffer.getScript(html, function(script) {
+
+			try
+			{
+				eval(script);
+			}
+			catch (e)
+			{
+			}
+
+			if(typeof videoId == 'undefined') {
+
+				return false;
+			} else {
+
+				youku_id = videoId;
+				return true;
+			}
+		}, '<script type="text/javascript">');
+
+		if(sniffer.checkStr(youku_id)) {
+			return true;
+		} else {
+			sniffer.fail('cannot found id');
+			return false;
+		}
+	}
+
+	var youku_id = null;
+	var THX = {};
+
+ </SCRIPT>
+</HTML>

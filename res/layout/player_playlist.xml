@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/palyer_playlist_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:background="#80000000"
+    android:focusableInTouchMode="true"
+    >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+      
+      	android:visibility="gone" >
+        
+        <TextView
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="15.0dip"
+        	android:text="播放列表"
+        	android:textSize="20sp"
+        	android:singleLine="true"
+        	android:textColor="@color/player_playlist_text_color"
+        	/>
+        
+        <ImageButton 
+            android:id="@+id/btn_close"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/background_transparent"
+            android:src="@drawable/ic_close_titlebar_episodelist"
+            />
+        
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/spilt_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:scaleType="fitXY"
+        android:background="#ff003460"
+        />
+    <RelativeLayout 
+        android:id="@+id/listlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <ListView
+        android:id="@+id/playlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/transparent_background"
+        android:fastScrollEnabled="true"
+        />
+    <Button 
+        android:id="@+id/error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="报告视频错误"
+        android:textColor="#d8ab21"
+        android:textSize="14sp"
+        />
+	</RelativeLayout>
+</LinearLayout>

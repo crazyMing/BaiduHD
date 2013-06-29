@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:player="http://schemas.android.com/apk/res/com.baidu.hd" 
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/personal_title_bar"
+        android:layout_weight="1" />
+    
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/float_shadow" />
+    
+    <com.baidu.hd.ui.ViewDragableSpace
+        android:id="@+id/personal_scroll_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/window_background_color"
+        android:isScrollContainer="true"
+        android:layout_weight="1"
+        player:isrepeat="false" >
+   <!--     
+        <include layout="@layout/per_buf_page"/>
+        <include layout="@layout/per_loc_page"/>
+        <include layout="@layout/per_fav_page"/>
+        <include layout="@layout/per_his_page"/>
+-->        
+    </com.baidu.hd.ui.ViewDragableSpace>
+
+    <include
+        android:id="@+id/bottom_bar"
+        layout="@layout/personal_bottom_bar" 
+        android:layout_weight="1"/>
+
+</LinearLayout>

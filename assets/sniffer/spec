@@ -1,0 +1,14 @@
+{'version':1, 'site':[
+{'site':'iqiyi.com', 'value':'iqiyi.html'},
+{'site':'cntv.cn', 'value':'cntv.html'}, 
+{'site':'ifeng.com', 'value':'ifeng.html'}, 
+{'site':'letv.com', 'value':'letv.html'}, 
+{'site':'qq.com', 'value':'qq.html'}, 
+{'site':'tudou.com', 'value':'tudou.html'}, 
+{'site':'youku.com', 'value':'youku.html'}, 
+{'site':'yinuyue.com', 'value':'yinyuetai.html'}, 
+{'site':'sohu.com', 'value':'sohu.html'}, 
+{'site':'pps.tv', 'value':'pps.html'}, 
+{'site':'pptv.com', 'value':'pptv.html'}, 
+{'site':'sina.com.cn', 'value':'sina.html'}
+]}

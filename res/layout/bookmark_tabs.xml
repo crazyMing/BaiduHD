@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <!-- 顶部标题栏 -->
+	<RelativeLayout android:id="@+id/bdsettings_title_bar"
+		style="@style/title_bar_background"
+		>
+		<!-- 返回按钮 -->
+		<Button android:id="@+id/btn_bookmarktabs_back"
+		    style="@style/title_bar_btn_cancel"/>
+		<!-- 标题名称 -->
+		<LinearLayout android:id="@+id/markandhistory_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:layout_centerInParent="true" android:background="@drawable/tabs_button_marks">
+		    <TextView android:layout_width="0dip" android:id="@+id/mark_button"
+		        android:text="@string/bookmark" android:textColor="@color/white" android:gravity="center" android:textSize="18dip"
+		        android:layout_height="fill_parent" android:layout_weight="1"/>
+		    <TextView android:layout_width="0dip" android:id="@+id/history_button"
+		        android:text="@string/tab_history" android:textColor="@color/black" android:gravity="center" android:textSize="18dip"
+		        android:layout_height="fill_parent" android:layout_weight="1"/>
+		</LinearLayout>
+		<Button android:id="@+id/btn_bookmarktabs_delete"
+		    android:text="@string/delete_all"
+		    android:layout_width="64dip" android:layout_height="34dip" android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true" android:layout_marginRight="6.6dip" android:textColor="@color/title_text_color"
+		    android:textSize="18.6sp" android:background="@drawable/title_button_selector"
+		    />
+	</RelativeLayout>
+	
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+
+	    android:visibility="gone"
+	    android:id="@+id/historylist_panel">
+		
+		<ExpandableListView 
+	    android:id="@+id/historylist"
+		android:layout_width="match_parent"
+	 	android:layout_height="fill_parent"
+	 	android:cacheColorHint="@android:color/white"
+	 	android:dividerHeight="0dip"
+        android:divider="@null"
+        />
+	
+	</LinearLayout>
+	
+	<ListView
+        android:id="@+id/bookmarklist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/white"
+        android:nextFocusDown="@+id/bookmark_create"
+        android:dividerHeight="0dip"
+        android:divider="@null" 
+        android:visibility="gone"/>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        layout="@layout/empty_view" />
+
+</LinearLayout>

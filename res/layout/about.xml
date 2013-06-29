@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="#f4f4f4">
+	<!-- 顶部标题栏 -->
+	<RelativeLayout android:id="@+id/about_title_bar"
+		style="@style/title_bar_background">
+		<!-- 返回按钮 -->
+		<Button android:id="@+id/btn_about_titlebar_back"
+		    style="@style/title_bar_btn_cancel"/>
+		<!-- 标题名称 -->
+		<TextView style="@style/title_bar_title"
+			android:text="@string/about_baidu_search_seeting" />
+	</RelativeLayout>
+<!-- 关于页面布局 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/ScrollView" 
+    android:layout_width="match_parent"  
+    android:layout_height="wrap_content" 
+    android:scrollbars="vertical"
+    android:layout_below="@id/about_title_bar"
+    style="@style/about_style">   
+    <LinearLayout 
+    	android:id="@+id/LinearLayout"  
+        android:orientation="vertical" 
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"> 
+        <!-- 顶部产品基本信息 -->
+		<include layout="@layout/about_logo"/>
+		
+		<!-- 描述文本 -->
+		<TextView 
+			android:layout_width="match_parent"  
+        	android:layout_height="32dip"
+        	android:text="@string/about_product_title"
+        	android:gravity="center_vertical"
+        	android:paddingLeft="12dip"
+        	android:textSize="16sp"
+        	android:textColor="#333333"
+        	android:background="#f4f4f4"
+		/>
+		<!-- 百度产品icon -->
+		<include layout="@layout/about_product"/>
+		<!-- 描述文本 -->
+		<TextView 
+			android:layout_width="match_parent"  
+        	android:layout_height="32dip"
+        	android:text="@string/about_search_title"
+        	android:gravity="center_vertical"
+        	android:paddingLeft="12dip"
+        	android:textSize="16sp"
+        	android:textColor="#333333"
+        	android:background="#f4f4f4"
+		/>
+		<!-- 产品详细介绍 -->
+		<include layout="@layout/about_search"/>
+	</LinearLayout>
+</ScrollView>  
+</RelativeLayout>

@@ -1,0 +1,215 @@
+# view res/layout/swipe_listview.xml #generated:2
+-keep class com.baidu.android.ext.widget.SwipeListView { <init>(...); }
+
+# view res/layout/browser_copy_search_view.xml #generated:2
+-keep class com.baidu.browser.explore.BPExplorePopView { <init>(...); }
+
+# view res/layout/tab_bar.xml #generated:9
+-keep class com.baidu.browser.ui.TabScrollView { <init>(...); }
+
+# view res/layout/browser_geolocation_permissions_prompt.xml #generated:19
+-keep class com.baidu.browser.webkit.BdGeolocationPermissionsPrompt { <init>(...); }
+
+# view res/layout/browser_webview_error.xml #generated:2
+-keep class com.baidu.browser.webpool.BPErrorView { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.baidu.hd.BaiduHD { <init>(...); }
+
+# view AndroidManifest.xml #generated:152
+-keep class com.baidu.hd.BrowSpecSelectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class com.baidu.hd.BrowserSpecActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:140
+-keep class com.baidu.hd.CombinedBookmarkHistoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:375
+-keep class com.baidu.hd.InitNetDetailService { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.baidu.hd.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.baidu.hd.MainTabActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:158
+-keep class com.baidu.hd.PlayerhomeFloatDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class com.baidu.hd.SearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.baidu.hd.StartHelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.baidu.hd.VoiceSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:347
+-keep class com.baidu.hd.browserhistory.BrowserHistoryActivity { <init>(...); }
+
+# view res/layout/baiduplayer_history_item.xml #generated:105
+# view res/layout/baiduplayer_history_item.xml #generated:93
+# view res/layout/folder_item.xml #generated:77
+# view res/layout/player_main.xml #generated:88
+-keep class com.baidu.hd.ctrl.AlwaysMarqueeTextView { <init>(...); }
+
+# view res/layout/floattitlelayout.xml #generated:2
+-keep class com.baidu.hd.ctrl.FloatTitleLayout { <init>(...); }
+
+# view res/layout/player_voice.xml #generated:11
+-keep class com.baidu.hd.ctrl.VerticalSeekBar { <init>(...); }
+
+# view res/layout/debug_p2p_block_view.xml #generated:45
+-keep class com.baidu.hd.debug.P2PBlockStateView { <init>(...); }
+
+# view res/layout/debug_p2p_block.xml #generated:7
+# view res/layout/player.xml #generated:17
+-keep class com.baidu.hd.debug.P2PDownloadView { <init>(...); }
+
+# view res/layout/debug_p2p_block_view.xml #generated:37
+-keep class com.baidu.hd.debug.P2PSectionStateView { <init>(...); }
+
+# view res/layout/player.xml #generated:25
+-keep class com.baidu.hd.debug.P2PSettingView { <init>(...); }
+
+# view res/layout/player.xml #generated:33
+-keep class com.baidu.hd.debug.TaskListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:370
+-keep class com.baidu.hd.detect.DetectService { <init>(...); }
+
+# view res/layout/player_box.xml #generated:9
+-keep class com.baidu.hd.home.HomeNavigationSwitcher { <init>(...); }
+
+# view res/layout/playerbox_recommended.xml #generated:102
+-keep class com.baidu.hd.home.LastPlayRightClickBurron { <init>(...); }
+
+# view AndroidManifest.xml #generated:270
+-keep class com.baidu.hd.home.PrivacySettingDialog { <init>(...); }
+
+# view res/layout/image_item_view.xml #generated:14
+-keep class com.baidu.hd.home.asyncimage.AsyncImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:377
+-keep class com.baidu.hd.invokeapp.HttpService { <init>(...); }
+
+# view AndroidManifest.xml #generated:340
+-keep class com.baidu.hd.local.FileBrowserActivity { <init>(...); }
+
+# view res/layout/per_buf_page.xml #generated:2
+-keep class com.baidu.hd.personal.BufferPage { <init>(...); }
+
+# view res/layout/per_fav_page.xml #generated:2
+-keep class com.baidu.hd.personal.FavoritePage { <init>(...); }
+
+# view AndroidManifest.xml #generated:199
+-keep class com.baidu.hd.personal.FileBrowserActivity { <init>(...); }
+
+# view res/layout/per_his_page.xml #generated:2
+-keep class com.baidu.hd.personal.HistoryPage { <init>(...); }
+
+# view res/layout/per_loc_page.xml #generated:2
+-keep class com.baidu.hd.personal.LocalPage { <init>(...); }
+
+# view AndroidManifest.xml #generated:184
+-keep class com.baidu.hd.personal.PersonalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:235
+-keep class com.baidu.hd.personal.PersonalDeleteDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:242
+-keep class com.baidu.hd.personal.PersonalMenuDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:303
+-keep class com.baidu.hd.player.PlayerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:256
+-keep class com.baidu.hd.settings.DocShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:263
+-keep class com.baidu.hd.settings.MenuClearHistoryDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:249
+-keep class com.baidu.hd.settings.SettingsAboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:192
+-keep class com.baidu.hd.settings.SettingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:214
+-keep class com.baidu.hd.settings.SettingsBufferPathActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:221
+-keep class com.baidu.hd.settings.SettingsCreateNewFolderDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:332
+-keep class com.baidu.hd.settings.SettingsFeedBackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:207
+-keep class com.baidu.hd.settings.SettingsFeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:228
+-keep class com.baidu.hd.settings.SettingsFolderExistedTipDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:363
+-keep class com.baidu.hd.test.BrowserHomeTest { <init>(...); }
+
+# view AndroidManifest.xml #generated:360
+-keep class com.baidu.hd.test.HomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:354
+-keep class com.baidu.hd.test.RegionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:357
+-keep class com.baidu.hd.test.SiteActivity { <init>(...); }
+
+# view res/layout/browser_progress_bar.xml #generated:2
+-keep class com.baidu.hd.ui.FakeProgressBar { <init>(...); }
+
+# view res/layout/float_player_search.xml #generated:2
+-keep class com.baidu.hd.ui.FloatPlayerSearchLayout { <init>(...); }
+
+# view res/layout/homeview.xml #generated:10
+-keep class com.baidu.hd.ui.HomeScrollView { <init>(...); }
+
+# view res/layout/homeview.xml #generated:2
+-keep class com.baidu.hd.ui.HomeView { <init>(...); }
+
+# view res/layout/introduction.xml #generated:9
+-keep class com.baidu.hd.ui.IntroductionViewDragableSpace { <init>(...); }
+
+# view res/layout/suggestion_clear_history_item.xml #generated:43
+# view res/layout/suggestion_clear_history_item.xml #generated:72
+-keep class com.baidu.hd.ui.LocalSettingTextView { <init>(...); }
+
+# view res/layout/suggestion_item.xml #generated:7
+-keep class com.baidu.hd.ui.NetImageView { <init>(...); }
+
+# view res/layout/personal.xml #generated:19
+-keep class com.baidu.hd.ui.ViewDragableSpace { <init>(...); }
+
+# view AndroidManifest.xml #generated:369
+-keep class com.baidu.hd.upgrade.RemoteUpgradeImp$DownLoadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:177
+-keep class com.baidu.hd.web.DownloadPageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:167
+-keep class com.baidu.hd.web.HomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:172
+-keep class com.baidu.hd.web.SearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:279
+-keep class com.baidu.hd.web.SearchResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:287
+-keep class com.baidu.hd.web.SpecActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:295
+-keep class com.baidu.hd.web.ThirdPartActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:371
+-keep class com.baidu.player.download.DownloadService { <init>(...); }
+

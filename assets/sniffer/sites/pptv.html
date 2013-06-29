@@ -1,0 +1,84 @@
+
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <SCRIPT src="../jquery.js"></SCRIPT>
+  <SCRIPT src="../sniffer.js"></SCRIPT>
+ </HEAD>
+
+ <SCRIPT>
+
+	sniffer.siteName = 'pptv';
+
+	function onStart() {
+
+		sniffer.getHtml(function(html) {
+
+			if(!getId(html)) { 
+				return;
+			}
+
+			var url = 'http://api.v.pptv.com/api/ipad/play.js?rid=' + pptv_id + '&cb=pptv_player_abcd';
+			sniffer.getText(url, 'text', function(data) {
+				
+				try
+				{
+					eval(data);					
+				}
+				catch (e)
+				{
+					sniffer.exception(e);
+					sniffer.fail('invalid text');
+				}
+
+			});
+		});
+	}
+
+	function pptv_player_abcd(json) {
+
+		var url = json.data.replace(/\\/g, '');
+		sniffer.success(url);
+	}
+
+	function getId(html) {
+
+		sniffer.getScript(html, function(script) {
+
+			try
+			{
+				script = script.replace('document.domain', '____x____');
+				eval(script);
+			}
+			catch (e)
+			{
+			}
+
+			if(typeof webcfg == 'undefined') {
+
+				return false;
+			} else {
+
+				try
+				{
+					pptv_id = webcfg.player.createConfig.playList[0].rid;
+				}
+				catch (e)
+				{
+				}
+				return true;
+			}
+		}, '<script type="text/javascript">');
+
+		if(sniffer.checkStr(pptv_id)) {
+			return true;
+		} else {
+			sniffer.fail('cannot found id');
+			return false;
+		}
+	}
+
+	var pptv_id = null;
+
+ </SCRIPT>
+</HTML>

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <SCRIPT src="../jquery.js"></SCRIPT>
+  <SCRIPT src="../sniffer.js"></SCRIPT>
+ </HEAD>
+
+ <SCRIPT>
+
+	sniffer.siteName = 'sina';
+
+	function onStart() {
+
+		sniffer.getHtml(function(html) {
+
+			if(!getId(html)) {
+				return;
+			}
+
+			sniffer.success('http://v.iask.com/v_play_ipad.php?vid=' + sina_id);
+		});
+	}
+
+	function getId(html) {
+
+		sniffer.getScript(html, function(script) {
+
+			try
+			{
+				script = script.replace('document.domain', '____x____');
+				eval(script);
+			}
+			catch (e)
+			{
+			}
+
+			if(typeof $SCOPE == 'undefined') {
+
+				return false;
+			} else {
+
+				sina_id = $SCOPE.video.videoData.ipad_vid;
+				return true;
+			}
+		}, '<script type="text/javascript">');
+
+		if(sniffer.checkStr(sina_id)) {
+			return true;
+		} else {
+			sniffer.fail('cannot found id');
+			return false;
+		}
+	}
+
+	var sina_id = null;
+
+ </SCRIPT>
+</HTML>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homerecent_grid_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+ <LinearLayout android:layout_width="fill_parent" 
+     android:layout_height="86dip"
+     android:orientation="vertical"
+     android:background="@drawable/playerhome_history_bg" 
+     >
+
+     <TextView
+         android:id="@+id/album_name"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:lines="3"
+		 android:layout_weight="1"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:textSize="15dip" 
+         android:textColor="#3c8cff"/>
+     
+     <TextView android:id="@+id/album_palying_time" android:layout_width="fill_parent" android:layout_height="wrap_content"
+         android:singleLine="true"
+         android:textSize="13dip"  
+         android:textColor="#ffffff"
+         android:gravity="bottom|center_horizontal"/>
+ </LinearLayout>
+
+</LinearLayout>

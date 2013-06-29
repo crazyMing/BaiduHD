@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="46dip" >
+
+    <LinearLayout android:id="@+id/suggestion_local_provider_setting_layout"
+        android:layout_width="49.3dip"
+        android:layout_height="fill_parent"      
+        android:layout_alignParentRight="true"
+        android:background="@drawable/suggestion_list_selector_simple_bg"
+        android:visibility="gone" >
+        
+        <ImageView android:id="@+id/suggestion_local_provider_setting"
+        	android:layout_width="23.3dip"
+        	android:layout_height="23.3dip"
+       	 	android:layout_marginTop="11.3dip"
+        	android:layout_marginLeft="13dip"
+        	android:src="@drawable/sug_local_setting_selector"/>
+        
+     </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_toLeftOf="@id/suggestion_local_provider_setting_layout"
+    	android:orientation="horizontal" >
+    	
+        <RelativeLayout 
+            android:id="@+id/suggestion_clear_history_layout"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_weight="1" >
+    		
+            <ImageView
+                android:id="@+id/suggestion_clearHistroy_diver"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="10.3dip"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/histroy_sug_diver"
+        		android:visibility="gone"/>
+    	
+    		<com.baidu.hd.ui.LocalSettingTextView
+        		android:id="@+id/suggestion_clear_history"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:layout_toLeftOf="@id/suggestion_clearHistroy_diver"
+        		android:gravity="center"
+        		android:text="@string/search_clear_history"
+        		android:textSize="16dip" 
+        		android:background="@drawable/suggestion_list_selector_simple_bg"/>    		
+    		
+    	</RelativeLayout>
+    	
+        
+        <RelativeLayout 
+            android:id="@+id/suggestion_open_private_mode_layout"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_weight="1" 
+    		android:visibility="gone">
+    		
+            <ImageView
+                android:id="@+id/suggestion_open_private_mode_diver"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="10.3dip"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/histroy_sug_diver"/>
+    	
+    		<com.baidu.hd.ui.LocalSettingTextView
+        		android:id="@+id/suggestion_open_private_mode"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:layout_toLeftOf="@id/suggestion_open_private_mode_diver"
+        		android:gravity="center"
+        		android:text="@string/suggestion_open_private_mode"
+        		android:textSize="16dip" 
+        		android:background="@drawable/suggestion_list_selector_simple_bg"/>
+    		
+    	</RelativeLayout>
+    
+    </LinearLayout>
+
+</RelativeLayout>

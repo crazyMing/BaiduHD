@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings页面布局文件 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="550dip"
+        android:layout_height="530dip"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_popover_bag_flow"
+        android:orientation="vertical" >
+
+        <!-- 顶部标题栏 -->
+
+        <RelativeLayout
+            android:id="@+id/bdsettings_title_bar"
+            style="@style/title_bar_background" >
+
+            <!-- 返回按钮 -->
+
+            <Button
+                android:id="@+id/btn_titlebar_back"
+                style="@style/title_bar_btn_cancel"
+                android:layout_alignParentRight="true" />
+            <!-- 标题名称 -->
+
+            <TextView
+                style="@style/title_bar_title"
+                android:text="@string/preference" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:background="@color/settings_bg"
+            android:paddingTop="10dip"
+            android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" >
+
+            <LinearLayout
+                android:id="@+id/bdsetttings_holder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:orientation="vertical" >
+
+                <!-- 清除软件缓存 -->
+
+                <LinearLayout
+                    android:id="@+id/bdsettings_clear_buffer"
+                    style="@style/player_settings_item"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/settings_item_title_text"
+                        android:text="清除cookies" />
+                </LinearLayout>
+
+                <!-- 缓存文件目录 -->
+
+                <RelativeLayout
+                    android:id="@+id/bdsettings_clear_cache"
+                    style="@style/player_settings_item"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/settings_item_title_text"
+                            android:text="清除缓存" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- 发送崩溃报告 -->
+
+                <RelativeLayout
+                    android:id="@+id/bdsettings_crash_report"
+                    style="@style/player_settings_item"
+                    android:background="@drawable/player_settings_item_disabled" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/bdsettings_wifi_title"
+                            style="@style/settings_item_title_text"
+                            android:text="发送崩溃报告" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/settings_crash_report"
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/btn_check"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <!-- 隐私设置 -->
+
+                <RelativeLayout
+                    android:id="@+id/bdsettings_privacy"
+                    style="@style/player_settings_item"
+                    android:background="@drawable/player_settings_item_disabled" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/settings_item_title_text"
+                            android:text="显示搜索记录提示" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/settings_privacy"
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/btn_check"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <!-- 启动时恢复未关闭标签设置 -->
+
+                <RelativeLayout
+                    android:id="@+id/bdsettings_reopen_last_pages"
+                    style="@style/player_settings_item"
+                    android:background="@drawable/player_settings_item_disabled" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/settings_item_title_text"
+                            android:text="启动时恢复未关闭标签" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/settings_reopen_last_pages"
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/btn_check"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <!-- 意见反馈 -->
+
+                <RelativeLayout
+                    android:id="@+id/bdsettings_feedback"
+                    style="@style/player_settings_item" >
+
+                    <TextView
+                        style="@style/settings_item_title_text"
+                        android:text="意见反馈" />
+                </RelativeLayout>
+
+                <!-- 关于 -->
+
+                <RelativeLayout
+                    android:id="@+id/bdsettings_about"
+                    style="@style/player_settings_item" >
+
+                    <TextView
+                        style="@style/settings_item_title_text"
+                        android:text="版本号 1.0.0" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

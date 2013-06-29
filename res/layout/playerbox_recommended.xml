@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playerboxs_recommended"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:id="@+id/search_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/search_ranking_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/website_top_left_selector"
+            android:drawableLeft="@drawable/list_title"
+            android:drawablePadding="10dip"
+            android:drawableRight="@drawable/into_icon"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/website_padding_left"
+            android:paddingRight="@dimen/website_padding_right"
+            android:singleLine="true"
+            android:text="@string/playerbox_recommended_searchranking_text"
+            android:textColor="#565656"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/search_ranking_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_ranking"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/search_ranking_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animationCache="false"
+            android:divider="#E5E5E5"
+            android:dividerHeight="1dip" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/hot_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_below="@id/search_ranking_wrapper"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/hot_ranking_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/website_bottom_left_selector"
+            android:drawableLeft="@drawable/list_title"
+            android:drawablePadding="10dip"
+            android:drawableRight="@drawable/into_icon"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/website_padding_left"
+            android:paddingRight="@dimen/website_padding_right"
+            android:singleLine="true"
+            android:text="@string/playerbox_recommended_hotranking_text"
+            android:textColor="#565656"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/hot_ranking_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hot_ranking"
+        android:visibility="gone" >
+
+        <GridView
+            android:id="@+id/hot_ranking_list"
+            android:layout_width="match_parent"
+            android:layout_height="460dip"
+            android:background="#E5E5E5"
+            android:horizontalSpacing="1dip"
+            android:listSelector="@drawable/searchranking_item_seleccted"
+            android:numColumns="2"
+            android:verticalSpacing="1dip" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/last_play_history"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_below="@id/hot_ranking_wrapper"
+        android:orientation="horizontal" >
+
+        <com.baidu.hd.home.LastPlayRightClickBurron
+            android:id="@+id/last_play_history_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/website_bottom_left_selector"
+            android:drawableLeft="@drawable/list_title"
+            android:drawablePadding="10dip"
+            android:drawableRight="@drawable/into_icon"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/website_padding_left"
+            android:paddingRight="@dimen/website_padding_right"
+            android:singleLine="true"
+            android:text="@string/playerbox_recommended_lastplayhistory"
+            android:textColor="#565656"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/last_play_history_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_play_history"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/home_recent_list_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:gravity="center"
+            android:text="您播放过的剧集会在这里显示"
+            android:textColor="#b2b2b2"
+            android:textSize="18dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/last_play_history_list_with_clear"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/last_play_history_list"
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:gravity="center"
+                android:horizontalSpacing="5dip"
+                android:listSelector="@drawable/playerhome_history_bg"
+                android:padding="6dip" >
+            </GridView>
+
+            <Button
+                android:id="@+id/last_play_history_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="42dip"
+                android:layout_gravity="center"
+                android:background="@drawable/last_play_clear_btn_selector"
+                android:gravity="center"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="清除最近播放"
+                android:textColor="#565656"
+                android:textSize="17dip" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/website_history"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_below="@id/last_play_history_wrapper"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/website_history_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/website_bottom_left_selector"
+            android:drawableLeft="@drawable/list_title"
+            android:drawablePadding="10dip"
+            android:drawableRight="@drawable/into_icon"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/website_padding_left"
+            android:paddingRight="@dimen/website_padding_right"
+            android:singleLine="true"
+            android:text="@string/playerbox_recommended_websitehistory"
+            android:textColor="#565656"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/website_historywrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/website_history"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/home_website_history_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="120dip"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="您还没有使用过任何站点播放"
+            android:textColor="#b2b2b2"
+            android:textSize="18dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/website_history_list_with_clear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/website_history_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:divider="#E5E5E5"
+                android:dividerHeight="0.5dip" />
+
+            <Button
+                android:id="@+id/playerhome_delete_allsite_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="42dip"
+                android:layout_gravity="center"
+                android:background="@drawable/last_play_clear_btn_selector"
+                android:gravity="center"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="清除站点历史"
+                android:textColor="#565656"
+                android:textSize="17dip" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

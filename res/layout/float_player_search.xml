@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.hd.ui.FloatPlayerSearchLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/float_MainRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/float_searchbox_height"
+    android:gravity="center_vertical"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp" 
+    android:background="@drawable/home_bg">
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+                android:gravity="center"
+        android:paddingLeft="5dip" 
+         android:id="@+id/edit_search_first_layout">
+    <TextView
+        android:id="@+id/brow_edit_search_first"
+        android:layout_width="wrap_content"
+        android:layout_height="42dip"
+        android:paddingRight="7dip"
+        android:background="@drawable/searchbox_inputbox_bg"
+        android:drawableLeft="@drawable/brow_top_search"
+        android:drawablePadding="5dip"
+        android:clickable="true"
+        android:focusable="false"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:paddingLeft="7dip"
+        android:textSize="20dp" 
+        android:hint="搜索"
+		/>
+    </LinearLayout>
+        
+    <TextView
+        android:id="@+id/float_search_or_cancel"
+        android:layout_width="70dip"
+        android:layout_height="42dip"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@id/edit_search_first_layout"
+        android:layout_centerVertical="true"
+        android:background="@drawable/searchbox_inputbox_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp" 
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/float_SearchPanel"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:layout_centerVertical="true"
+        android:paddingLeft="1dip"
+        android:layout_toRightOf="@+id/brow_top_mark"
+        android:layout_toLeftOf="@id/float_search_or_cancel"
+        android:background="@drawable/searchbox_inputbox_bg" >
+
+        <ImageView 
+            android:id="@+id/brow_top_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" 
+            android:scaleType="center" 
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:src="@drawable/brow_adress_search_mark_insert"
+            android:clickable="true"/>
+        <View android:id="@+id/devise" android:layout_toRightOf="@id/brow_top_mark"
+            android:layout_width="1dip" android:layout_height="fill_parent" android:background="@drawable/mainview_tabs_divise" />
+        
+        <ImageView
+            android:id="@+id/float_LogoBtn"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="1.3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_toRightOf="@id/devise"
+            android:paddingBottom="2.6dp"
+            android:paddingLeft="4.6dp"
+            android:paddingRight="14.6dp"
+            android:paddingTop="2.6dp"
+            android:background="@drawable/searchbox_panel_button_background_selector"
+            android:scaleType="centerInside" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/float_spinner_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/float_LogoBtn"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/float_spinner_down" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/float_clear_content"
+            android:layout_width="@dimen/clear_content_icon_size"
+            android:layout_height="@dimen/clear_content_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/searchbox_clear_text"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/SearchTextInput"
+            style="@style/searchbox_edittext_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/float_clear_content"
+            android:layout_toRightOf="@+id/float_LogoBtn"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:paddingLeft="7dip"
+            android:imeOptions="actionSearch"
+            android:hint="输入网址"
+            android:singleLine="true" />
+        
+        
+        <!-- add by leikang -->
+        <ImageView 
+            android:id="@+id/brow_top_refresh_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="1.3dip"
+            android:paddingTop="0.6dp"
+            android:paddingBottom="0.6dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:scaleType="center"
+			android:src="@drawable/brow_top_refresh"
+			android:layout_alignRight="@id/SearchTextInput"
+            />
+ 
+    </RelativeLayout>
+
+</com.baidu.hd.ui.FloatPlayerSearchLayout>

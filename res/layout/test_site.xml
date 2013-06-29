@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/float_tiltle_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/txt_url"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cursorVisible="true"
+            android:singleLine="true" 
+            android:layout_weight="10"/>
+        
+        <LinearLayout
+            android:id="@+id/float_SearchPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/float_searchbox_height"
+            android:background="@drawable/searchbox_bk" 
+            android:orientation="horizontal"
+             android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前往"
+                android:textSize="16dip" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+    <WebView
+        android:id="@id/web_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    <WebView
+        android:id="@+id/sniffer_web_view"
+        android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</LinearLayout>

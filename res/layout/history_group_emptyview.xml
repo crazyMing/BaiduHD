@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/empty_view" android:layout_width="fill_parent"
+	android:layout_height="48dip" android:background="@drawable/bookmark_listitem_normal">
+	
+    <TextView android:id="@+id/empty_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+	    android:drawableLeft="@drawable/history_group_empty"
+	    android:text="@string/history_group_empty"
+	    android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:textColor="#C0C0C0"
+        android:drawablePadding="6dip"
+        android:textSize="18sp"/>
+    
+
+</RelativeLayout>

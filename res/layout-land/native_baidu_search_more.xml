@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/image_product_index_background"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/xinwen"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/button_product_1"
+        android:gravity="center"
+        android:text="新闻"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/tieba"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/button_product_2"
+        android:gravity="center"
+        android:text="贴吧"
+        android:textSize="17dip" />
+
+    <TextView
+        android:id="@+id/zhidao"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/button_product_3"
+        android:gravity="center"
+        android:text="知道"
+        android:textSize="17dip" />
+
+    <TextView
+        android:id="@+id/yinyue"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/button_product_4"
+        android:gravity="center"
+        android:text="音乐"
+        android:textSize="17dip" />
+
+    <TextView
+        android:id="@+id/tupian"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/button_product_5"
+        android:gravity="center"
+        android:text="图片"
+        android:textSize="17dip" />
+
+    <TextView
+        android:id="@+id/shipin"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/button_product_6"
+        android:gravity="center"
+        android:text="视频"
+        android:textSize="17dip" />
+
+    <TextView
+        android:id="@+id/ditu"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/button_product_7"
+        android:gravity="center"
+        android:text="地图"
+        android:textSize="17dip" />
+
+    <TextView
+        android:id="@+id/baike"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/button_product_8"
+        android:gravity="center"
+        android:text="百科"
+        android:textSize="17dip" />
+
+    <TextView
+        android:id="@+id/wenku"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/button_product_9"
+        android:gravity="center"
+        android:text="文库"
+        android:textSize="17dip" />
+
+    <TextView
+        android:id="@+id/hao123"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawablePadding="5dip"
+        android:drawableTop="@drawable/button_product_10"
+        android:gravity="center"
+        android:text="好123"
+        android:textSize="17dip" />
+
+</LinearLayout>

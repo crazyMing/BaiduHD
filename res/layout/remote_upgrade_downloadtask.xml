@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    >  
+  
+    <ImageView
+        android:id="@+id/remote_app_icon"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" 
+        />  
+  
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="15dip"
+	    android:layout_marginTop="15dip"
+	    android:layout_toRightOf="@id/remote_app_icon"
+	    >
+	    <TextView  
+	        android:id="@+id/remote_progress_title"  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content"
+	        android:text="百度HD"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        />
+	    
+	    <TextView  
+	        android:id="@+id/remote_progress_rate"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:layout_below="@id/remote_progress_title"
+	        android:textSize="12sp"
+	        />
+	  </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personal_tiltle_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_bar_background"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/personal_buffer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:clickable="true"
+        >
+
+        <TextView
+            android:id="@+id/personal_buffer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12.0dip"
+            android:singleLine="true"
+            android:text="@string/personal_buffer"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/personal_buffer_icon"
+            android:layout_width="match_parent"
+            android:layout_height="3.0dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2.5dip"
+            android:layout_marginTop="2.0dip"
+            android:background="@drawable/personal_tab_selector"
+            android:contentDescription="@string/app_name"
+            android:src="@null"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personal_local_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/personal_local_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12.0dip"
+            android:singleLine="true"
+            android:text="@string/personal_local"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/personal_local_icon"
+            android:layout_width="match_parent"
+            android:layout_height="3.0dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2.5dip"
+            android:layout_marginTop="2.0dip"
+            android:background="@drawable/personal_tab_selector"
+            android:contentDescription="@string/app_name"
+            android:src="@null"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personal_favorite_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/personal_favorite_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12.0dip"
+            android:singleLine="true"
+            android:text="@string/personal_favorite"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/personal_favorite_icon"
+            android:layout_width="match_parent"
+            android:layout_height="3.0dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2.5dip"
+            android:layout_marginTop="2.0dip"
+            android:background="@drawable/personal_tab_selector"
+            android:contentDescription="@string/app_name"
+            android:src="@null"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personal_history_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/personal_history_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12.0dip"
+            android:singleLine="true"
+            android:text="@string/personal_history"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/personal_history_icon"
+            android:layout_width="match_parent"
+            android:layout_height="3.0dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2.5dip"
+            android:layout_marginTop="2.0dip"
+            android:background="@drawable/personal_tab_selector"
+            android:contentDescription="@string/app_name"
+            android:src="@null"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

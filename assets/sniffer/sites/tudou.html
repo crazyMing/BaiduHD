@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <SCRIPT src="../jquery.js"></SCRIPT>
+  <SCRIPT src="../sniffer.js"></SCRIPT>
+ </HEAD>
+
+ <SCRIPT>
+
+	sniffer.siteName = 'tudou';
+
+	function onStart() {
+
+		sniffer.getHtml(function(html) {
+
+			if(!getId(html)) { 
+				return;
+			}
+
+			sniffer.getText(
+				'http://vr.tudou.com/v2proxy/dispatch?ip=&type=9&base=1&pw=&vn=02&code=' + tudou_id, 
+				'text', 
+				function(data) {
+
+					try
+					{
+						eval('var __snifferResult__=' + data);
+
+						sniffer.getText(__snifferResult__.datas[0].url.replace('null', 'tudouResult'), 
+							'text', 
+							function(data) {
+								eval(data);
+							});
+					}
+					catch (e)
+					{
+						sniffer.exception(e);
+						sniffer.fail('invalid text');
+					}
+				});
+		});
+	}
+
+	function tudouResult(data) {
+		sniffer.success(data.src.replace(/\\/g, ''));
+	}
+
+	function getId(html) {
+
+		var url = sniffer.getUrl();
+
+		// 播放列表模式
+		if(url.indexOf('playlist') != -1) {
+
+			var index = url.lastIndexOf('/');
+			if(index == -1) {
+				sniffer.fail('playlist url 1st fail');
+				return false;
+			}
+
+			var str = url.substr(index + 1);
+			index = str.indexOf('.');
+			if(index == -1) {
+				sniffer.fail('playlist url 2nd fail');
+				return false;
+			}
+
+			str = str.substr(0, index);
+			index = str.indexOf('i');
+			if(index == -1) {
+				tudou_iid = -1;
+			} else {
+				tudou_iid = str.substr(index + 1);
+			}
+		}
+
+		sniffer.getScript(html, function(script) {
+
+			try
+			{
+				script = script.replace('document.domain', '____x____');
+				eval(script);
+			}
+			catch (e)
+			{
+			}
+
+			if(typeof icode != 'undefined') {
+
+				tudou_id = icode;
+				return true;
+			}
+
+			if(typeof listData == 'undefined' || defaultIid == 'undefined' ) {
+
+				return false;
+			} else {
+
+				if(tudou_iid == -1) {
+					tudou_iid = defaultIid;
+				}
+				$.each(listData, function(index, data) {
+
+					if(data.iid == tudou_iid) {
+						tudou_id = data.icode;
+						return true;
+					}
+				});
+				return false;
+			}
+		});
+
+		if(sniffer.checkStr(tudou_id)) {
+			return true;
+		} else {
+			sniffer.fail('cannot found id');
+			return false;
+		}
+	}
+
+	var tudou_id = null;
+
+ </SCRIPT>
+</HTML>

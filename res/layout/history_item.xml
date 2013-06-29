@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="fill_parent" 
+        android:layout_height="48dip"
+        android:orientation="horizontal"
+        android:background="@drawable/bookmark_listitem"
+        >
+    <ImageView android:id="@+id/favicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="9dip"
+        android:src="@drawable/bookmark_directory"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView android:id="@+id/top"
+            android:maxLines="1"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toRightOf="@id/favicon"
+            android:layout_marginTop="5dip"
+			android:textAppearance="@style/bookmark_title_text"
+            android:text="xxxx"
+            />
+
+    <TextView android:id="@+id/bottom"
+            android:maxLines="1"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toRightOf="@id/favicon"
+            
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dip"
+            android:textAppearance="@style/bookmark_url_text"
+            android:text="xxxx"
+            />
+        
+    <ImageView android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dip"
+        android:visibility="invisible"
+        android:src="@drawable/bookmark_directory_indicator"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+        
+</RelativeLayout>

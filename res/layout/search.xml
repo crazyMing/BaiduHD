@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_panel"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="48dip"
+    >
+	
+    <include layout="@layout/float_player_search" android:id="@+id/float_MainRoot"/>	
+    
+    <RelativeLayout android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+	    android:paddingBottom="6dip"
+	    android:background="@color/transparent"
+        android:layout_below="@id/float_MainRoot">
+    
+    	<include layout="@layout/swipe_listview"
+	    	android:id="@+id/search_suggestion_list"
+	    	 />
+    	
+    	<View android:id="@+id/empty_view"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="fill_parent"
+    	    android:visibility="gone" />
+    </RelativeLayout>
+	
+	
+	<!-- 非隐私模式下内容为空提示 -->       
+	<TextView android:id="@+id/search_suggestion_empty_tips"
+	    android:layout_width="fill_parent" 
+        android:layout_height="40dip"
+        android:text="@string/search_nohistory_tips"
+        android:textSize="16dip" android:textColor="#ff000000"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/float_searchbox_height"
+	   />    
+	<!-- 隐私模式下内容为空提示 -->   
+	<RelativeLayout android:id="@+id/search_suggestion_empty_privatemode_tips"
+		android:layout_width="fill_parent" 
+		android:layout_height="44dip"
+		android:background="@drawable/private_mode_tips_bg"
+		android:layout_marginTop="@dimen/float_searchbox_height"
+		android:visibility="gone"
+	    >   
+	    <TextView android:id="@+id/search_close_private_mode"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent"
+	        android:text="@string/search_close_private_mode"
+	        android:textSize="16dip" android:textColor="#ff0054ff"
+	        android:gravity="center"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="20dip"
+	       /> 
+        <TextView
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"
+            android:text="@string/search_nohistory_privatemode_tips"
+            android:textSize="14dip" android:textColor="#ff000000"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/search_close_private_mode"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+           />   	       
+    </RelativeLayout>   
+       
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:player="http://schemas.android.com/apk/res/com.baidu.hd"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/home_toolbar_bg">
+ 
+    <com.baidu.hd.home.HomeNavigationSwitcher
+        android:id="@+id/indexGridPager"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_navigation_panel_height"
+        android:focusableInTouchMode="true"
+        android:padding="5dip"
+        player:isrepeat="false"
+        player:isdragable="true"
+         >
+ 
+    </com.baidu.hd.home.HomeNavigationSwitcher>
+
+    <LinearLayout  android:layout_height="15dip" android:layout_width="fill_parent" 
+        android:gravity="center">
+    <ImageView
+        android:id="@+id/screen_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/id_normal_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:paddingLeft="25dip"
+        android:layout_weight="1.0"
+        android:gravity="left|center"
+        android:button="@drawable/btn_checkbox"
+        android:textColor="@color/checkbox_textcolor_black"
+        android:visibility="gone"
+        />
+
+    <CheckBox
+        android:id="@+id/id_create_shortcut_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_weight="1.0"
+        android:button="@drawable/btn_checkbox"
+        android:text="创建快捷键"
+        android:textColor="@color/checkbox_textcolor_black"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

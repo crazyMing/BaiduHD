@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="4dip"
+    android:paddingRight="4dip"
+    android:background="@color/background_transparent" >
+    
+    <View 
+        android:id="@+id/popmenu_outside"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip" 
+        android:layout_weight="1"
+        android:background="@color/background_transparent"/>
+    <LinearLayout
+        android:id="@+id/browser_menu_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/browser_menu_background"
+        android:paddingTop="6dip"
+        android:paddingBottom="6dip"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="12dip"
+             >
+
+            <TextView
+                android:id="@+id/brow_menu_home"
+                style="@style/brow_menu_text_style"
+                android:drawableTop="@drawable/brow_menu_dialog_home"
+                android:text="主页" />
+
+            <TextView
+                android:id="@+id/brow_menu_markhistory"
+                style="@style/brow_menu_text_style"
+                android:drawableTop="@drawable/brow_menu_dialog_markhistory"
+                android:text="书签/历史" />
+
+            <TextView
+                android:id="@+id/brow_menu_add_mark"
+                style="@style/brow_menu_text_style"
+                android:drawableTop="@drawable/brow_menu_dialog_add_mark"
+                android:text="添加书签" />
+
+            <TextView
+                android:id="@+id/brow_menu_del_mark"
+                style="@style/brow_menu_text_style"
+                android:drawableTop="@drawable/brow_menu_dialog_del_mark"
+                android:text="删除书签"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/brow_menu_refresh"
+                style="@style/brow_menu_text_style"
+                android:drawableTop="@drawable/brow_menu_dialog_refresh"
+                android:text="刷新" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="12dip"
+             >
+
+            <TextView
+                android:id="@+id/brow_menu_settings"
+                style="@style/brow_menu_text_style"
+                android:drawableTop="@drawable/brow_menu_dialog_settings"
+                android:text="设置" />
+
+            <TextView
+                android:id="@+id/brow_menu_deletehistory"
+                style="@style/brow_menu_text_style"
+                android:drawableTop="@drawable/brow_menu_dialog_deletehistory"
+                android:text="清除痕迹" />
+
+            <TextView
+                android:id="@+id/brow_menu_feedback"
+                style="@style/brow_menu_text_style"
+                android:drawableTop="@drawable/brow_menu_dialog_feedback"
+                android:text="反馈" />
+
+            <TextView
+                android:id="@+id/brow_menu_exit"
+                style="@style/brow_menu_text_style"
+                android:drawableTop="@drawable/brow_menu_dialog_exit"
+                android:text="退出" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

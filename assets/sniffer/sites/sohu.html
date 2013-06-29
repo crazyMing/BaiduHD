@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <SCRIPT src="../jquery.js"></SCRIPT>
+  <SCRIPT src="../sniffer.js"></SCRIPT>
+ </HEAD>
+
+ <SCRIPT>
+
+	sniffer.siteName = 'tv.sohu';
+
+	function onStart() {
+
+		sniffer.setRedirect = function(url) {
+
+			if(url.indexOf('m.tv.sohu.com') == -1) {
+				return;
+			}
+
+			window.Sniffer.stopRedirect();
+
+			var index = url.indexOf('?');
+			if(index == -1) {
+				sniffer.fail('invalid url');
+				return;
+			}
+
+			var search = url.substr(index + 1);
+			var sohu_ids = search.split('_');
+
+			sniffer.success('http://hot.vrs.sohu.com/ipad' + sohu_ids[0] + '.m3u8')
+		}
+
+		var url = 'http://share.vrs.sohu.com/videoShare/Video_Mobile.action?url=' + sniffer.getUrl();
+		window.Sniffer.fetchRedirect(url);
+	}
+
+ </SCRIPT>
+</HTML>

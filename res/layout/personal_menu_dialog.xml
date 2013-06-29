@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <!-- 下载菜单 -->
+    <LinearLayout 
+        android:id="@+id/per_buf_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_buf_menu_pause" style="@style/personal_menu_item_style" android:text="暂停任务" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_buf_menu_all_pause" style="@style/personal_menu_item_style" android:text="全部暂停" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_buf_menu_play" style="@style/personal_menu_item_style" android:text="立即播放" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_buf_menu_delete" style="@style/personal_menu_item_style" android:text="删除任务" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+    </LinearLayout>
+
+    <!-- 本地菜单 -->
+    <LinearLayout 
+        android:id="@+id/per_loc_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_loc_menu_play" style="@style/personal_menu_item_style" android:text="立即播放" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_loc_menu_delete" style="@style/personal_menu_item_style" android:text="删除文件"/>
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+    </LinearLayout>
+
+
+    <!-- 收藏菜单 -->
+    <LinearLayout 
+        android:id="@+id/per_fav_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_fav_menu_play" style="@style/personal_menu_item_style" android:text="继续播放"/>
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_fav_menu_detail" style="@style/personal_menu_item_style" android:text="查看详情"/>
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_fav_menu_delete" style="@style/personal_menu_item_style" android:text="取消收藏"/>
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+    </LinearLayout>
+
+
+    <!-- 历史菜单 -->
+    <LinearLayout 
+        android:id="@+id/per_his_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_his_menu_play" style="@style/personal_menu_item_style" android:text="继续播放"/>
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_his_menu_detail" style="@style/personal_menu_item_style" android:text="查看详情"/>
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+        <TextView android:id="@+id/per_his_menu_delete" style="@style/personal_menu_item_style" android:text="删除记录"/>
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:background="#e5e5e5"/>
+    </LinearLayout>
+
+</LinearLayout>

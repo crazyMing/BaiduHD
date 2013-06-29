@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_full_holo_light"
+    android:orientation="vertical" >
+
+    <!-- Title -->
+
+    <TextView
+        style="@style/DialogText_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10.0dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="清除记录"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#ffcfcfcf" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="250dip"
+        android:background="@null"
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 浏览历史 -->
+
+            <TextView
+                android:id="@+id/menu_clear_history_browser_history"
+                style="@style/menu_clear_history_dlg_item"
+                android:text=" 浏览历史" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#ffcfcfcf" />
+            <!-- 搜索历史 -->
+
+            <TextView
+                android:id="@+id/menu_clear_history_search_history"
+                style="@style/menu_clear_history_dlg_item"
+                android:text=" 搜索历史" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#ffcfcfcf" />
+            <!-- 访问cookies -->
+
+            <TextView
+                android:id="@+id/menu_clear_history_cookies"
+                style="@style/menu_clear_history_dlg_item"
+                android:text=" 访问cookies" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#ffcfcfcf" />
+            <!-- 软件缓存 -->
+
+            <LinearLayout
+                android:id="@+id/menu_clear_history_buffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/multiwindow_list_selector"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:src="@drawable/menu_clear_history_item_icon_selector" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/menu_clear_history_dlg_item"
+                        android:clickable="false"
+                        android:drawableLeft="@null"
+                        android:paddingLeft="5.0dip"
+                        android:paddingBottom="0.0dip"
+                        android:paddingTop="8.0dip"
+                        android:text="软件缓存" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="false"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="80.0dip"
+                        android:text="(不会删除本地视频及播放历史)"
+                        android:textColor="#ff333333"
+                        android:textSize="12.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#ffcfcfcf" />
+            <!-- 最近播放记录 -->
+
+            <TextView
+                android:id="@+id/menu_clear_history_present_playlist"
+                style="@style/menu_clear_history_dlg_item"
+                android:text=" 最近播放记录" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#ffcfcfcf" />
+
+    <!-- buttons -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/menu_clear_his_btn_clear"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_weight="1"
+            android:background="#ffdfdfdf"
+            android:text="清除"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+
+        <ImageView
+            android:id="@+id/spilt_line_button"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="#ffcfcfcf" />
+
+        <Button
+            android:id="@+id/menu_clear_his_btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_weight="1"
+            android:background="#ffdfdfdf"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+</LinearLayout>

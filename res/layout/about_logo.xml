@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+    <ImageView 
+    	android:id="@+id/about_logo_icon"
+    	android:src="@drawable/icon"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="20dip"
+    	android:layout_marginTop="20dip"
+    	android:paddingBottom="18dip"
+    />
+    <TextView 
+    	android:id="@+id/about_logo_text1"
+    	android:text="@string/about_logo_text1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/about_logo_icon"
+    	android:layout_marginLeft="14dip"
+    	android:layout_marginTop="23dip"
+    	android:textSize="18dip"
+    	android:textColor="#333333"
+    />
+    <TextView 
+    	android:id="@+id/about_logo_text2"
+    	android:text="@string/about_logo_text2"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/about_logo_icon"
+    	android:layout_below="@id/about_logo_text1"
+    	android:layout_marginLeft="14dip"
+    	android:layout_marginTop="3dip"
+    	android:textSize="12dip"
+    	android:textColor="#333333"
+    />
+    
+    <!-- 升级按钮 -->
+   <Button android:id="@+id/about_logo_update_button"
+   		android:layout_alignParentRight="true"
+		android:layout_width="80dip"
+    	android:layout_height="34dip"
+    	android:layout_marginTop="26dip"
+		android:layout_marginRight="17dip"
+		android:textSize="16dip" 
+		android:textColor="#000000"
+		android:text="@string/about_check_update" 
+		android:background="@drawable/ding_manager_button_bg"
+		/>
+</RelativeLayout>

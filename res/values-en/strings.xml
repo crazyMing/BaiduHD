@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Baidu Player</string>
+    <string name="widget_search_name">(4×1)Baidu Search</string>
+    <string name="widget_ding_name">(4×2)Baidu Ding</string>
+    <string name="widget_clock_name">(4×2)Baidu Clock</string>
+</resources>

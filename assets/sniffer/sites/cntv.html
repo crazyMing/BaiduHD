@@ -1,0 +1,116 @@
+
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <SCRIPT src="../jquery.js"></SCRIPT>
+  <SCRIPT src="../sniffer.js"></SCRIPT>
+ </HEAD>
+
+ <SCRIPT>
+
+	sniffer.siteName = 'cntv';
+
+	function onStart() {
+
+		sniffer.getHtml(function(html) {
+
+			if(!getId(html)) { 
+				return;
+			}
+
+			var url = 'http://vdn.apps.cntv.cn/api/getIpadVideoInfo.do?pid=' + cntv_id + '&tai=ipad';
+			sniffer.getText(url, 'text', function(data) {
+				
+				try
+				{
+					eval(data);
+				}
+				catch (e)
+				{
+					sniffer.exception(e);
+					sniffer.fail('invalid text');
+				}
+			});
+		});
+	}
+
+	function getHtml5VideoData(str) {
+
+		var json = JSON.parse(str);
+		if(json.is_ipad_support != "true") {
+			sniffer.fail('is_ipad_support is not true');
+			return;
+		}
+
+		if(json.ack != "yes") {
+			sniffer.fail('ack is not yes');
+			return;
+		}
+
+		var result = new Array();
+		if(json.video.chapters) {
+			$.each(json.video.chapters, function(index, chapter) {
+				result.push(chapter);
+			});
+		} else if(json.video.streams) {
+			var choosenName = "";
+			$.each(json.video.streams, function(index, stream) {
+				if(json.video.streams[index].bitRate == '450') {
+					choosenName = json.video.streams[index].streamName;
+				}
+			});
+			if(choosenName == "")
+			{
+				choosenName = json.video.streams[0].streamName;
+			}
+			result.push('http://v.cctv.com/rtmp' + choosenName.replace('mp4:v', ''));
+		}
+
+		if(result.length == 0) {
+			sniffer.fail('not found src');
+			return;
+		}
+
+		sniffer.success(result);
+	}
+
+	function getId(html) {
+
+		sniffer.getScript(html, function(script) {
+
+			try
+			{
+				eval(script);
+			}
+			catch (e)
+			{
+			}
+
+			if(cntv_id == null) {
+				return false;
+			} else {
+				return true;
+			}
+		}, '<script type="text/javascript">');
+
+		if(sniffer.checkStr(cntv_id)) {
+			return true;
+		} else {
+			sniffer.fail('cannot found id');
+			return false;
+		}
+	}
+
+	var player = {addVariable: function(key, value) {
+		if(key == 'videoCenterId') {
+			cntv_id = value;
+		}
+	}};
+
+	var cntv_id = null;
+
+	function createPlayer() {return player;}
+	function writePlayer() {}
+
+ </SCRIPT>
+</HTML>

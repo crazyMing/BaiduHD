@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/float_MainRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:gravity="center_vertical"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:src="@drawable/home_bg" >
+
+    <ImageView
+        android:id="@+id/searchbar_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip"
+        android:src="@drawable/browser_back" />
+
+    <ImageView
+        android:id="@+id/searchbar_forward_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/searchbar_back_btn"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip"
+        android:src="@drawable/browser_forward" />
+
+    <ImageView
+        android:id="@+id/searchbar_home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/searchbar_forward_btn"
+        android:paddingBottom="10dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:src="@drawable/browser_home" />
+
+    <ImageView
+        android:id="@+id/brow_top_refresh_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/searchbar_home_btn"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:src="@drawable/image_browser_refresh_pressed" />
+
+    <ImageView
+        android:id="@+id/searchbar_settings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:src="@drawable/image_settings_icon_small" />
+
+    <ImageView
+        android:id="@+id/searchbar_voice_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/searchbar_settings_btn"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="5dip"
+        android:paddingTop="10dip"
+        android:src="@drawable/image_voice_icon_small_selected" />
+
+    <RelativeLayout
+        android:id="@+id/float_SearchPanel"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/searchbar_voice_btn"
+        android:layout_toRightOf="@id/brow_top_refresh_stop"
+        android:background="@drawable/searchbox_inputbox_bg"
+        android:paddingLeft="1dip" >
+
+        <LinearLayout
+            android:id="@+id/clear_and_mark_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/float_clear_content"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:scaleType="center"
+                android:src="@drawable/searchbox_clear_text"
+                android:visibility="visible" />
+            
+            <View
+                android:id="@+id/devise"
+                android:layout_width="1dip"
+   				android:layout_height="16dip"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="13dip"
+                android:paddingRight="13dip"
+                android:background="@color/normal_textcolor_gray"
+                android:visibility="gone" />
+            
+            <ImageView
+                android:id="@+id/brow_top_mark"
+             	 android:layout_width="35dip"
+             	 android:layout_gravity="center_vertical"
+                android:layout_height="35dip"
+                android:scaleType="center"
+                android:src="@drawable/brow_adress_search_mark_insert"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/SearchTextInput"
+            style="@style/searchbox_edittext_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawablePadding="10dip"
+            android:drawableLeft="@drawable/search_sug_keywords_normal"
+            android:ellipsize="end"
+            android:hint="搜索或输入网址"
+            android:paddingLeft="7dip"
+            android:layout_toLeftOf="@id/clear_and_mark_btn"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">百度HD</string>
+    <string name="activity_not_found">未找到应用程序</string>
+    <string name="str_browser_select">选择</string>
+    <string name="choose_upload">"选择要上传的文件"</string>
+    <string name="uploads_disabled">"文件上传功能已停用。"</string>
+    <string name="loadSuspendedTitle">"没有网络连接"</string>
+    <string name="loadSuspended">"未连接到互联网，因此浏览器无法载入该网页。"</string>
+    <string name="ssl_warnings_header">"该网站的安全证书有问题。"</string>
+    <string name="ssl_continue">"继续"</string>
+    <string name="security_warning">"安全警告"</string>
+    <string name="ssl_untrusted">"该证书并非来自可信的授权中心。"</string>
+    <string name="ssl_mismatch">"网站的名称与证书上的名称不一致。"</string>
+    <string name="ssl_expired">"该证书已过期。"</string>
+    <string name="ssl_not_yet_valid">"该证书尚未生效。"</string>
+    <string name="browserFrameFormResubmitLabel">"确认"</string>
+    <string name="browserFrameFormResubmitMessage">"您尝试查看的网页中包含已经提交的数据（“POSTDATA”）。如果您重新发送这些数据，系统会重复该网页上的表单所执行过的一切操作（如搜索或在线购买）。"</string>
+    <string name="about_head_about">关于</string>
+    <string name="about_logo_text1">百度客户端 </string>
+    <string name="about_logo_text2">版本号：</string>
+    <string name="about_product_zhangbai_text">掌上百度</string>
+    <string name="about_product_appsearch_text">应用搜索</string>
+    <string name="about_product_browser_text">百度HD</string>
+    <string name="about_product_inputmethod_text">百度输入法</string>
+    <string name="about_check_update">检查更新</string>
+    <string name="about_checking">检查中...</string>
+    <string name="about_product_title">更多百度产品</string>
+    <string name="about_search_title">关于百度客户端（For Android） </string>
+    <string name="about_search_content_summary">"百度客户端（For Android)是百度推出的一款方便手机用户随时随地使用百度搜索服务的应用。"</string>
+    <string name="about_search_content_seg1">"【覆盖多种搜索方式】"</string>
+    <string name="about_search_content_seg2">"智能的全局搜索，支持对网页、本地通讯录、短信、应用程序等内容进行搜索，可直接在搜索结果中打电话、发短信、访问网站等操作，让搜索更快捷和多元化。搜索过程中，自动收录搜索历史、提供搜索建议，方便手机用户更快找到所需。 "</string>
+    <string name="about_search_content_seg3">"【导航一键直达】"</string>
+    <string name="about_search_content_seg4">"多种导航，一键直达所需信息。"</string>
+    <string name="about_search_content_seg5">"【更方便最贴心】"</string>
+    <string name="about_search_content_seg6">"桌面小部件精美又方便。常用信息不用搜，天气股票Ding在首页，时刻获取最新动态。"</string>
+    <string name="about_search_content_tail">Copyright © 2012 Baidu, Inc.\nAll Rights Reserved.</string>
+    <string name="uuid">用户唯一识别码:\n</string>
+    <string name="builderVersion">构建版本号：</string>
+    <string name="update_toast_already_latest">您的版本已经是最新的了</string>
+    <string name="update_toast_bad_net">网络故障,请稍后再试</string>
+    <string name="update_checkbox_text">忽略此版本的更新</string>
+    <string name="auto_update_dialog_button_update">更新</string>
+    <string name="auto_update_dialog_button_later">稍后</string>
+    <string name="auto_update_dialog_button_close">关闭</string>
+    <string name="positive_update_dialog_button_ok">好</string>
+    <string name="positive_update_dialog_button_later">稍后</string>
+    <string name="dialog_positive_button_text">确定</string>
+    <string name="dialog_nagtive_button_text">取消</string>
+    <string name="find_high_package_dialog_title">发现升级包</string>
+    <string name="update_finish_title">下载完毕</string>
+    <string name="update_unfinish_title">正在下载中...</string>
+    <string name="update_finish_message">安装包已经下载完毕,是否立即升级?</string>
+    <string name="update_failed_message">解析错误，安装失败。</string>
+    <string name="update_error_title">下载中断</string>
+    <string name="update_error_message">安装包下载失败，无法升级。</string>
+
+    <!-- for 强制升级 -->
+    <string name="update_dialog_close">退出</string>
+    <string name="version_update_title">版本更新</string>
+    <string name="download_percent">正在下载更新，请稍等…%d</string>
+    <string name="download_waiting">等待更新中&#8230;</string>
+    <string name="update_progress_cancel">取消</string>
+    <string name="update_download_error">更新失败，请检查网络并重试…</string>
+    <string name="install_no_file_found">"未找到安装包"</string>
+    <string name="accept">接受</string>
+    <string name="quit">退出</string>
+    <string name="contextmenu_openlink">"打开"</string>
+    <string name="contextmenu_savelink">"保存链接"</string>
+    <string name="contextmenu_copy">"复制"</string>
+    <string name="contextmenu_copylink">"复制链接网址"</string>
+    <string name="contextmenu_download_image">"保存图片"</string>
+    <string name="contextmenu_view_image">"查看图片"</string>
+    <string name="contextmenu_dial_dot">"拨打…"</string>
+    <string name="contextmenu_add_contact">"添加联系人"</string>
+    <string name="contextmenu_send_mail">"发送电子邮件"</string>
+    <string name="contextmenu_map">"地图"</string>
+    <string name="no_web_history">暂无浏览记录</string>
+    <string name="no_search_history">暂无搜索历史</string>
+    <string name="web_clear_history">清空浏览记录</string>
+    <string name="web_clear_history_tips">是否清空浏览记录?</string>
+    <string name="search_clear_history">清空搜索记录</string>
+    <string name="search_clear_history_tips">是否清空搜索记录?</string>
+    <string name="search_nohistory_tips">没有搜索历史</string>
+    <string name="search_nohistory_privatemode_tips">隐私模式不记录搜索和浏览历史</string>
+    <string name="search_close_private_mode">关闭隐私模式</string>
+    <string name="search_visit_direct">"访问："</string>
+    <string name="search_go">搜索</string>
+    <string name="search_cancel">取消</string>
+    <string name="search_visit">访问</string>
+
+    <!-- for download -->
+    <string name="download_title">"下载历史记录"</string>
+    <string name="download_no_sdcard_dlg_title">"无 SD 卡"</string>
+    <string name="download_no_sdcard_dlg_msg">"需要有 SD 卡才能下载%s。"</string>
+    <string name="download_sdcard_busy_dlg_title">"SD 卡不可用"</string>
+    <string name="download_sdcard_busy_dlg_msg">"SD 卡正忙。要允许下载，请在通知中选择“关闭 USB 存储”。"</string>
+    <string name="download_no_application_title">"无法打开文件"</string>
+    <string name="no_downloads">"下载历史记录为空。"</string>
+    <string name="download_error">"下载失败"</string>
+    <string name="download_success">"下载完成"</string>
+    <string name="download_begin">"开始下载"</string>
+    <string name="download_running">"正在下载"</string>
+    <string name="download_pending">"正在开始下载..."</string>
+    <string name="cancel">"取消"</string>
+    <string name="ok">"确定"</string>
+    <string name="button_queue_for_wifi">"排队"</string>
+    <string name="wifi_required_title">"文件太大，不适于通过移动网络下载"</string>
+    <string name="wifi_required_body">"您不能从该移动网络下载一个大小为%1$s的文件。下次连接到 Wi-Fi 网络时，可触摸%1$s下载此文件。"</string>
+    <string name="wifi_recommended_title">"加入 Wi-Fi 下载队列？"</string>
+    <string name="wifi_recommended_body">"从该移动网络下载这个大小为 %1$s的文件可能会耗尽电池电量，还要向运营商支付额外的费用。下次连接到 Wi-Fi 网络时，可触摸%2$s下载此文件。"</string>
+    <string name="button_cancel_download">"取消"</string>
+    <string name="button_start_now">"立即开始"</string>
+    <string name="deselect_all">"清除所选项"</string>
+    <string name="download_unknown_title">"&lt;未命名&gt;"</string>
+    <string name="notification_need_wifi_for_size">"此大小的文件需要通过 Wi-Fi 下载"</string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">" 还有 %d 项"</string>
+    <string name="notification_download_complete">"下载完成"</string>
+    <string name="notification_download_failed">"下载失败"</string>
+    <string name="missing_title">"&lt;未知&gt;"</string>
+    <string name="download_queued">"已入队列"</string>
+    <string name="download_menu_sort_by_size">"按大小排序"</string>
+    <string name="download_menu_sort_by_date">"按时间排序"</string>
+    <string name="dialog_file_missing_body">"未找到已下载的文件。"</string>
+    <string name="dialog_title_queued_body">"文件暂时不可用"</string>
+    <string name="dialog_queued_body">"该文件已加入队列，供以后下载。"</string>
+    <string name="keep_queued_download">"保留"</string>
+    <string name="remove_download">"删除"</string>
+    <string name="delete_download">"删除"</string>
+    <string name="dialog_file_already_exists">"无法下载，目标文件已存在。"</string>
+    <string name="dialog_insufficient_space_on_external">"无法完成下载，存储空间不足。"</string>
+    <string name="dialog_insufficient_space_on_cache">"无法完成下载，存储空间不足。"</string>
+    <string name="dialog_invalid_on_external">"外部存储器空间不足或者无法使用，转入内部存储器下载。"</string>
+    <string name="dialog_media_not_found">"无法下载，未安装外部媒体。"</string>
+    <string name="dialog_cannot_resume">"下载中断，无法继续进行。"</string>
+    <string name="dialog_failed_body">"该下载失败。"</string>
+    <string name="dialog_title_not_available">"文件不可用"</string>
+    <string name="retry_download">"重试"</string>
+    <string name="cancel_running_download">"取消"</string>
+	<string name="cancel_download">"已经取消下载"</string>
+    <!-- for geolocation -->
+    <string name="geolocation_permissions_prompt_message">"%s需要了解您的位置信息"</string>
+    <string name="geolocation_permissions_prompt_share">"共享位置信息"</string>
+    <string name="geolocation_permissions_prompt_dont_share">"拒绝"</string>
+    <string name="geolocation_permissions_prompt_remember">"记住偏好设置"</string>
+    <string name="geolocation_permissions_prompt_toast_allowed">"此网站可以访问您所在的地点。</string>
+    <string name="geolocation_permissions_prompt_toast_disallowed">"此网站无法访问您所在的地点。</string>
+
+    <!-- 语音搜索 -->
+    <string name="voice_start">请说话</string>
+    <string name="once">重试</string>
+    <string name="voice_search_recognize_fail">无法识别</string>
+    <string name="voice_search_connect_fail">未能连接到服务器</string>
+    <string name="voice_search_recorder_initialized_fail">语音初始化失败</string>
+    <string name="voice_nodifying">正在识别</string>
+    <string name="voice_end_speak">完毕</string>
+    <string name="voice_search_poweredby">Powered by 百度HD</string>
+
+    <!-- for settings -->
+    <string name="preference">设置</string>
+    <string name="private_setting">隐私设置</string>
+    <string name="clear_cookies">清除访问cookies</string>
+    <string name="clear_search_history">清除搜索历史</string>
+    <string name="open_private_mode">隐私模式</string>
+    <string name="suggestion_open_private_mode">开启隐私模式</string>
+    <string name="local_search_setting">本地搜索设置</string>
+    <string name="change_home_bg_setting">更改壁纸</string>
+    <string name="change_home_bg">更改壁纸</string>
+    <string name="about_baidu_search_seeting">@string/about_head_about</string>
+    <string name="delete">删除</string>
+    <string name="delete_all">清空</string>
+    <string name="confirm_clean_play_history">确定清除最近播放历史?</string>
+    <string name="confirm_clean_search_history">确定清除搜索历史?</string>
+    <string name="confirm_clean_visit_cookies">确定清除访问cookies?</string>
+    <string name="confirm_clean">确认</string>
+    <string name="cancel_clean">取消</string>
+    <string name="changebg__activity_name">桌面壁纸</string>
+    <string name="finish_clean_search_history">已清空搜索历史</string>
+    <string name="finish_clean_visit_cookies">已清空访问cookies</string>
+    <string name="settings_download">下载管理</string>
+    <string name="settings_changebg_success">已成功更换背景图片</string>
+    <string name="privacy_setting_footer_prompt">隐私模式下，搜索的关键词将不再保留</string>
+    <string name="select_local_picture">选择本地图片</string>
+    <string name="feedback_setting">用户反馈</string>
+    <string name="help">帮助</string>
+    <string name="settting_bookmarks_sync">同步掌上百度书签</string>
+    <string name="exit">退出</string>
+
+    <!-- 添加成功 -->
+    <string name="addSuccess">添加成功</string>
+    <string name="deleteBookmark">取消书签</string>
+    <string name="addBookmark">添加书签成功</string>
+
+    <!-- 添加快捷方式 -->
+    <string name="shortcut_add_dialog_title">在桌面添加百度快捷方式？</string>
+    <string name="shortcut_add_dialog_ok">确认</string>
+    <string name="shortcut_add_dialog_cancel">取消</string>
+    <string name="suggestion_item_description">description</string>
+
+    <!-- 错误页文案 -->
+    <string name="webview_error_retry_button">重试</string>
+    <string name="webview_error_back_button">返回</string>
+    <string name="webview_error_file_not_found">要访问的页面不存在</string>
+    <string name="webview_error_fail_connection">未能连接到服务器</string>
+
+    <!-- 自动下载提示框 -->
+    <string name="app_auto_download_dialog_title">下载</string>
+    <string name="app_auto_download_dialog_ok">确定</string>
+    <string name="app_auto_download_dialog_cancel">取消</string>
+    <string name="app_auto_download_dialog_text_prefix">快速下载</string>
+    <string name="app_auto_download_dialog_checkbox_text">下次不再提示</string>
+    <string name="app_download_description_postfix">下载</string>
+    <string name="ding_manager_confirmed_del">删除</string>
+    <string name="ding_manager_edit">编辑</string>
+    <string name="ding_manager_done">完成</string>
+    <string name="ding_manager_only_one_ding">Ding不能全部删除哦!</string>
+    <string name="feedback_title">意见反馈</string>
+    <string name="refresh_ding_title">打开应用时刷新Ding</string>
+    <string name="ding_main_content_null">请在设置中打开Ding开关，可获取天气、小说、股票等信息</string>
+    <string name="tieba_notification">贴吧消息通知</string>
+    <string name="tieba_notification_time">通知时间间隔</string>
+    <string name="tieba_notification_unlogin_dialog_title">开启失败</string>
+    <string name="tieba_notification_unlogin_dialog_message">需要登录百度帐号。是否现在登录？</string>
+    <string name="text_selection_tip">滑动选择搜索内容</string>
+    <string name="text_selection_fail_tip">选词不成功，请重新选择！</string>
+    <string name="text_selection_ok_tip">内容已复制，长按输入框可粘贴</string>
+    <string name="load_empty_tip">请输入网址！</string>
+    <string name="copy">复制</string>
+    <string name="search">搜索</string>
+    <string name="share_content">"<xliff:g id="text">%s</xliff:g><xliff:g id="link">%s</xliff:g> (分享自@百度APP)"</string>
+    <string name="share_waiting">"正在准备分享..."</string>
+    <string name="share_channel">"分享方式"</string>
+
+    <!-- 长按菜单 -->
+    <string name="browser_menu_open">打开</string>
+    <string name="browser_menu_newwindow_open">新窗口打开</string>
+    <string name="browser_menu_copy">复制链接</string>
+    <string name="browser_menu_select_text">搜索/复制</string>
+    <string name="browser_menu_share">分享</string>
+    <string name="browser_menu_save_image">保存图片</string>
+    <string name="browser_menu_load_image">查看图片</string>
+
+    <!-- tab -->
+    <string name="browser_tab_default_text">新标签页</string>
+    <string name="too_many_windows_msg">打开窗口数已达上限</string>
+    <!-- 搜索空白页 -->
+    <string name="browser_search_page_null_text1">输入关键词,发起搜索</string>
+    <string name="browser_search_page_null_text2">体验语音搜索,更方便更快捷</string>
+
+    <!-- 九宫格 - 自定义导航 - 编辑 -->
+    <string name="title_navigator_edit">编辑导航</string>
+    <string name="title_navigator_add">添加导航</string>
+    <string name="tip_weburl">网址：</string>
+    <string name="tip_label">名称：</string>
+    <string name="tip_dir">目录：</string>
+    <string name="hint_weburl">请输入网址</string>
+    <string name="hint_label">请输入站点名称</string>
+    <string name="recommend">推荐</string>
+    <string name="tip_bad_url">当前网址不符合规范</string>
+    <string name="tip_dupli_url">当前站点已添加</string>
+    <string name="navigator_prompt">拖动图标可以编辑位置</string>
+    <string name="navigator_done">完成</string>
+
+    <!-- 百度服务入口 -->
+    <string name="baidu_service">百度服务</string>
+    <string name="more">更多</string>
+    <string name="fold">收起</string>
+    <string name="open_new_window">新窗口打开</string>
+    <string name="copy_link">复制链接</string>
+    <!-- 多窗口 -->
+    <string name="multiwindow_bottombar_add">新建窗口</string>
+    <string name="multiwindow_bottombar_finish">完成</string>
+    <string name="multiwindow_no_title">无标题</string>
+    <string name="multiwindow_home_title">首页</string>
+    <string name="multiwindow_no_subtitle"></string>
+    <string name="multiwindow_searchpage_no_title">百度HD</string>
+    <string name="multiwindow_searchpage_no_subtitle">百度一下，你就知道</string>
+
+    <!-- 快速导航区（九宫格） -->
+    <string name="navigation_menu_item_edit">编辑</string>
+    <string name="navigation_menu_item_remove">删除</string>
+    <string name="navigation_menu_item_remove_msg">确认删除导航“%s”?</string>
+    <string name="navigation_menu_item_remove_ok">确定</string>
+    <string name="navigation_menu_item_remove_cancel">取消</string>
+    <string name="navigation_menu_item_remove_title">删除导航</string>
+
+    <!-- about setting -->
+    <string name="package_name">包名：</string>
+    <string name="version_name">version name：</string>
+    <string name="version_code">version_code：</string>
+    <string name="icafe_version_name">提测版本号：</string>
+    <string name="type_id">type id：</string>
+    <string name="config_file">是否正在使用searchbox_config.ini：</string>
+    <string name="compile_time">软件包生成时间：</string>
+    <string name="add_ding_home">添加到首页</string>
+    <string name="back_browser_tips">点击这里返回浏览页</string>
+    <string name="dialog_disclaimer_title">免责声明</string>
+    <string name="dialog_disclaimer_content">百度HD提醒您：请您仔细阅读并理解本声明，选择“确定使用”即表明您接受该声明且愿意受到下列限制：\r\n
+1、  本产品提供浏览网页、地址栏、搜索栏以及视频播放等功能。对于视频播放功能，内容均是百度以非人工检索方式、根据您键入或选择的关键词自动生成到第三方网页的链接。百度本身不存储任何资源，也不对被链接的内容进行编辑和修改。\r\n
+2、  百度尊重且保护用户个人隐私，用户同意并理解本产品通过记录用户使用行为等完善产品，用户可以通过隐私模式来避免使用行为被记录。\r\n
+3、  用户仔细阅读并同意&lt;&lt;许可使用协议&gt;&gt;以及&lt;&lt;隐私保护声明&gt;&gt;。\r\n</string>
+
+    <!-- login -->
+    <string name="menu_item_login">登录</string>
+    <string name="menu_item_logout">注销登录</string>
+    <string name="webview_loading">正在载入，请稍候…</string>
+    <string name="title_login">登录百度帐号</string>
+    <string name="title_logout">注销百度帐号</string>
+    <string name="title_register">注册百度帐号</string>
+    <string name="btn_register">注册</string>
+    <string name="toast_login_success">%s, 欢迎回来!</string>
+    <string name="toast_logout_success">已注销!</string>
+    <string name="toast_logout_fail">注销失败!</string>
+    <string name="default_display_name">已登录</string>
+    <string name="default_toast_login_success">欢迎回来!</string>
+    <string name="dialog_title_logout">注销登录</string>
+    <string name="dialog_description_logout">确定注销登录吗？</string>
+    <string name="dialog_title_connection_error">联网失败</string>
+    <string name="dialog_description_connection_error">是否重试？</string>
+
+    <!-- 个人中心 add by sunjianshun 2012.10.25 -->
+    <string name="select_all">全选</string>
+    <string name="select_reverse">取消全选</string>
+    <string name="personal_buffer">缓存</string>
+    <string name="personal_local">本地</string>
+    <string name="personal_favorite">收藏</string>
+    <string name="personal_history">历史</string>
+    <string name="personal_buffer_describe">共有 %d个任务</string>
+    <string name="personal_local_describe">共有%d个视频</string>
+    <string name="personal_favorite_describe">共有%d个收藏</string>
+    <string name="personal_non_watch_info">暂无观看记录</string>
+    <string name="personal_non_update_info">暂无更新信息</string>
+    <string name="personal_non_history_default_tip">您还没有收藏记录</string>
+    <string name="personal_non_history_listview_tip">收藏的网络视频会显示在这里</string>
+    <string name="personal_back">返回</string>
+    <string name="dialog_button_cancel">取消</string>
+    <string name="found_number_video">已经找到%d个视频</string>
+    <string name="local_bk_tip">点击顶部刷新按钮添加本地视频</string>
+    <string name="local_have_number_count">共有%d个视频</string>
+    <string name="local_folder_to_parent">返回上一级目录</string>
+    <string name="file_browser_activity_title">选择目录</string>
+    <string name="file_browser_activity_no_video">该文件夹内无视频文件</string>
+    <string name="import_file_succeed">成功添加了%d个视频</string>
+    <string name="import_file_failed">未发现新的视频</string>
+    <string name="local_finding">正在查找视频</string>
+    <string name="personal_sdcard_use">已用空间: %.1fG</string>
+    <string name="personal_sdcard_left">可用空间: %.1fG</string>
+    <string name="personal_sdcard_no_tip">未获取到SD卡，可能由于SD卡未插好</string>
+    <string name="personal_sdcard_no">无效大小</string>
+    <string name="personal_task_pause">暂停任务</string>
+    <string name="personal_task_start">开始任务</string>
+    <string name="personal_all_pause">全部暂停</string>
+    <string name="personal_all_start">全部开始</string>
+
+    <!-- 曾用过的应用程序名 -->
+    <string-array name="old_app_names">
+        <item>百度HD</item>
+        <item>Baidu Search</item>
+    </string-array>
+
+    <!-- 互通模块 -->
+    <string name="share_label">读取您的百度帐号登录信息</string>
+    <string name="share_desctription">读取您的百度帐号登录信息</string>
+
+    <!-- 书签&历史 -->
+    <string name="bookmark">书签</string>
+    <string name="tab_bookmarks">@string/bookmark</string>
+    <string name="tab_history">历史</string>
+    <string name="create_bookmark">创建书签</string>
+    <string name="make_dir">添加书签目录</string>
+    <string name="edit_dir">编辑书签目录</string>
+    <string name="hint_dir">请输入目录名称</string>
+    <string name="title_address">标题和地址</string>
+    <string name="save_dir">存储位置</string>
+    <string name="select_save_dir">选择书签存储位置</string>
+    <string name="selected_from_history">从历史记录中选择</string>
+    <string name="site_name">标题</string>
+    <string name="site_url">地址</string>
+    <string name="bookmark_cannot_save_url">该书签已存在</string>
+    <!-- 首页menu区显示增加书签 -->
+    <string name="add_bookmark">增加书签</string>
+    <!-- Toast informing the user that their action to save a bookmark has succeeded -->
+    <string name="bookmark_saved">成功保存书签</string>
+    <!-- Toast informing the user that their action to save a bookmark did not succeed -->
+    <string name="bookmark_not_saved">保存书签失败</string>
+    <!-- Toast 保存书签目录成功 -->
+    <string name="bookmark_dir_saved">保存书签目录成功</string>
+    <!-- Toast 保存书签目录失败 -->
+    <string name="bookmark_dir_not_saved">保存书签目录失败</string>
+    <!-- Error that appears in the title of Bookmark dialog when user selects OK with invalid URL -->
+    <string name="bookmark_url_not_valid">不是有效的url</string>
+    <!-- Error that appears in the title of Bookmark dialog when user selects OK with empty Name field -->
+    <string name="bookmark_needs_title">需要填写一个书签名</string>
+    <!-- Error that appears in the title of Bookmark dialog when user selects OK with empty Location field -->
+    <string name="bookmark_needs_url">需要填写一个网址</string>
+    <!-- Error: 新建目录名为空时提示信息 -->
+    <string name="bookmark_dir_needs_name">目录名不能为空</string>
+    <!-- toast：新建的目录已经存在，请改名 -->
+    <string name="bookmark_dir_exist">该目录已存在，请换个名字</string>
+    <!-- 书签编辑页面: -->
+    <string name="bookmark_selectdir">选择文件夹</string>
+    <!-- 删除书签前确认 -->
+    <string name="delete_bookmark_warning">确认删除书签  \"<xliff:g>%s</xliff:g>\"吗?</string>
+    <!-- 删除目录前确认 -->
+    <string name="delete_directory_warning">确认删除书签目录  \"<xliff:g>%s</xliff:g>\"吗?</string>
+    
+    <string name="delete_all_bookmarks_warning">确认清空所有书签吗？</string>
+    <!-- 删除历史记录前确认 -->
+    <string name="delete_history_warning_single">删除本条历史记录吗?</string>
+    <string name="delete_history_warning_all">清空所有历史记录吗?</string>
+    <!-- Toast：没有历史记录可以删除 -->
+    <string name="no_history_deleted">历史记录为空</string>
+    <!-- Toast: 删除历史记录失败 -->
+    <string name="clear_hisotry_fail">清除历史记录失败</string>
+    <string name="default_title_name">网页</string>
+    <string name="save">保存</string>
+    <string name="addbookmark">添加书签</string>
+    <string name="editbookmark">编辑书签</string>
+    <string name="delbookmark">删除书签</string>
+    <string name="delbookmarkdir">删除书签目录</string>
+    <string name="add2bookmark">添加书签</string>
+    <string name="add2navi">添加导航</string>
+    <string name="root_dir">根目录 </string>
+    <string name="bookmark_empty_text">您还没有书签</string>
+    <string name="history_empty_text">您还没有历史记录</string>
+    <string name="history_group_empty">没有浏览记录</string>
+
+    <!-- 长按书签menu -->
+    <string name="contextmenu_openlink_newwindow">新窗口打开</string>
+    <string name="contextmenu_edit">编辑</string>
+    <string name="contextmenu_delete">删除</string>
+
+    <!-- 长按目录 -->
+    <string name="contextmenu_open">打开</string>
+    <string name="contextmenu_dir_edit">编辑</string>
+    <string name="contextmenu_dir_delete">删除</string>
+
+    <!-- 书签/历史 -->
+    <string name="title_delete_single_history">删除历史</string>
+    <string name="title_delete_all_history">清空历史</string>
+    <string name="search_the_web">"搜索网页"</string>
+    <string name="bdmobile_bookmarks_directory">掌上百度</string>
+    <string name="import_bookmarks_title">导入书签</string>
+    <string name="import_bookmarks_message">快速导入本机“掌上百度”书签？（个别掌百书签可能无法兼容）</string>
+    <string name="import_bookmarks_confirm">导入</string>
+    <string name="import_bookmarks_cancel">取消</string>
+    <string name="import_bookmarks_toast_success">书签导入完成，%1$d条成功，%2$d条无法兼容</string>
+    <string name="import_bookmarks_toast_fail">书签导入失败，在“设置”中可以再次导入</string>
+    <string name="import_bookmarks_toast_fail2">书签导入失败，请稍后重试</string>
+    <string name="import_bookmarks_toast_cancel">在“设置”中可以导入“掌上百度”书签</string>
+    <string name="bookmarks_manage">书签管理</string>
+    <string name="bookmark_add">添加书签</string>
+    <string name="bookmarkdir_add">添加书签目录</string>
+    <string name="refresh">刷新</string>
+    <string name="stop">停止加载</string>
+    <string name="msg_insert_navigator_sucess">导航添加成功</string>
+    <string name="msg_insert_navigator_full">导航区已满，请删除后再添加</string>
+    <string name="msg_insert_navigator_failed">添加失败，请加载完成后再添加</string>
+    <string name="msg_insert_navigator_exist">导航已存在</string>
+    <string name="tip_bad_bookmarkdir">当前目录已存在</string>
+    <string name="bookmark_menu_open_newwindow">新窗口打开</string>
+    <string name="bookmark_menu_open">打开</string>
+    <string name="bookmark_menu_open_navigator">添加到导航</string>
+
+    <!-- 历史分类 -->
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="earlier">更早</string>
+
+    <!-- 图片浏览 -->
+    <string name="image_loading">加载中...</string>
+    <string name="image_download_err">图片下载失败</string>
+    <string name="image_decode_err">图片解析失败</string>
+    <string name="networkerr">网络连接出现问题，请重新尝试</string>
+    <string name="imagesearch_none">没有找到相关的图片</string>
+    <string name="image_save_fail">保存失败</string>
+    <string name="image_save_success">已保存至 /sdcard/baidu/image</string>
+    <string name="image_sdcard_unmounted">SD卡被移除，请退出图片浏览</string>
+    <string name="image_low_storage">存储卡空间不足</string>
+    <string name="image_gallery_back">返回</string>
+    <string name="tieba_gallery_help_toast">长按贴吧图片，选择“查看图片”，可连续看图 </string>
+
+    <!-- baiduplayer -->
+
+    <string name="force_exit_dialog_title">很抱歉</string>
+    <string name="force_exit_dialog_message">应用程序意外停止，请重试</string>
+    <string name="service_creating">正在初始化服务，请稍候</string>
+    <string name="exit_dialog_title">提示</string>
+    <string name="dialog_sdcard_message">请插入SD卡！</string>
+    <string name="dialog_retry_button">重试</string>
+    <string name="exit_dialog_message">确认要退出程序吗?</string>
+
+    <!-- player界面 -->
+    <string name="player_caching">缓冲%s%%</string>
+    <string name="player_speed">速度%s</string>
+    <string name="player_parse">分析中</string>
+    <string name="download_tip">已添加到离线列表</string>
+    <string name="download_exist_tip">已存在于缓存列表中</string>
+    <string name="download_no_select_tip">请选择剧集</string>
+    <!-- player 开始缓冲&出错页面 -->
+    <string name="player_error_net">抱歉，获取数据失败，请检查网络连接情况</string>
+    <string name="player_error_no_supported_codec">抱歉，解码失败</string>
+    <string name="player_error_invalid_path">无法找到此文件</string>
+    <string name="player_error_sdcard">找不到SD卡</string>
+    <string name="player_error_sniffer_fail">抱歉，解析视频链接失败</string>
+    <string name="player_error_other">抱歉，播放失败</string>
+
+    <!-- gestrue -->
+    <string name="gestrue_bright">亮度:%.0f%%</string>
+    <string name="gestrue_volume">声音:%.0f%%</string>
+
+    <!-- 锁屏相关 -->
+    <string name="lock_screen_lock">屏幕已锁定</string>
+    <string name="lock_screen_unlock">屏幕已解锁</string>
+    <string name="lock_screen_back">屏幕已锁定，请点击左侧解锁按钮解锁</string>
+
+    <!-- 收藏提示 -->
+    <string name="favorite_info_add">已成功添加至个人-收藏</string>
+    <string name="favorite_info_remove">已取消收藏</string>
+
+    <!-- upgrade -->
+    <string name="dialog_app_upgrade_title">发现新版本</string>
+    <string name="dialog_app_upgrade_downloading">正在获取最新版本</string>
+    <string name="dialog_upgrade_ok">立即更新</string>
+    <string name="dialog_upgrade_successed">更新成功</string>
+    <string name="dialog_upgrade_failed">更新失败</string>
+    <string name="dialog_upgrade_checknosdcard_faild">更新失败,请插上SD卡</string>
+    <string name="dialog_upgrade_checksdcard_noenoughspace_faild">更新失败,SD卡空间不足</string>
+    <string name="dialog_playercore_upgrade_checknosdcard_faild">播放内核更新失败,请插上SD卡</string>
+    <string name="dialog_playercore_upgrade_checksdcard_noenoughspace_faild">播放内核更新失败,SD卡空间不足</string>
+    <string name="dialog_playercore_upgrade_checksdcard_nowriteable_faild">播放内核更新失败,SD卡不可写</string>
+    <string name="dialog_playercore_upgrade_checkstorein_noenoughspace_faild">播放内核更新失败,内部存储空间不足</string>
+    <string name="dialog_upgrade_copy_playercore_successed">播放内核更新成功</string>
+    <string name="dialog_upgrade_copy_playercore_faild">内部存储空间不足，播放内核更新失败</string>
+    <string name="dialog_upgrade_playercore_checkmd5_faild">播放内核更新失败,请重试</string>
+    <string name="dialog_upgrade_rename_playercore_using_faild">播放内核正在被使用，更新失败</string>
+    <string name="dialog_upgrade_rename_playercore_other_faild">播放内核更新异常，请重试</string>
+    <string name="dialog_upgrade_cancel">暂不更新</string>
+    <string name="dialog_upgrade_cancel_current">不再提示当前版本</string>
+    <string name="dialog_upgrade_check_error">更新失败，请检查网\r\n络后重试</string>
+    <string name="dialog_upgrade_check_working">当前正在升级,请稍后!</string>
+    <string name="dialog_upgrade_check_no_need">当前版本已经是最新版本</string>
+    <string name="dialog_player_core_upgrade_title">更新播放内核</string>
+    <string name="dialog_player_core_upgrade_downloadding">正在获取最新播放内核</string>
+    <string name="dialog_player_core_upgrade_message">检测到最新的播放内核，可大幅提升您的播放体验，是否更新？</string>
+    <string name="upgrade_remote_apk_downloading_title">百度HD升级中</string>
+    <string name="upgrade_remote_apk_downloaded_title">百度HD更新</string>
+    <string name="upgrade_remote_apk_downloaded_rate">已下载安装包，点击安装</string>
+    <string name="upgrade_remote_playercore_downloaded_failed">网络不稳定，内核更新失败，请在设置中尝试手动更新！</string>
+
+    <!-- notifacation -->
+    <string name="remote_download_task">有%d个缓存任务进行中，点击查看！</string>
+
+    <!-- tip -->
+    <string name="dialog_3g_message">提醒您当前使用的是2G/3G流量,需支付运营商较高费用,是否确定使用？</string>
+    <string name="network_not_available">当前网络不可用,请检查网络</string>
+
+    <!-- task strings -->
+    <string name="start_all">全部开始</string>
+    <string name="stop_all">全部暂停</string>
+    <string name="task_bk_tip1">您还没有离线缓存任务</string>
+    <string name="task_bk_tip2">在详情页、播放页面点击离线缓存</string>
+    <string name="task_have_number_count">共有%d个任务</string>
+    <string name="task_sniffer_error">分析网页失败</string>
+    <string name="task_sdcard_full_error">sd卡空间不足</string>
+    <string name="task_error">缓存出错</string>
+    <string name="task_queue">等候中</string>
+    <string name="task_stop">已停止</string>
+    <string name="task_complete">已完成</string>
+
+    <!-- history strings -->
+    <string name="no_history">您还没有播放历史</string>
+    <string name="no_history_multiple">您还没有剧集播放历史</string>
+    <string name="no_history_single">您还没有单集播放历史</string>
+    <string name="no_history_submit">播放过的网络视频会显示在这里</string>
+    <string name="history_finished">完结</string>
+    <string name="history_update_newest_count">有%s集更新</string>
+    <string name="history_update_video_count">共有%s个视频</string>
+    <string name="history_update_to_normal">更新至第%s集</string>
+    <string name="history_update_to_entertainment">更新至%s期</string>
+    <string name="history_watch_to_album">观看至第%s集</string>
+    <string name="history_watch_to_entertainment">观看至%s期</string>
+    <string name="history_watch_to_normal">观看至%s</string>
+    <string name="history_have_number_count_all">共有%d个播放历史</string>
+    <string name="history_have_number_count_multiple">共有%d个剧集历史</string>
+    <string name="history_have_number_count_single">共有%d个单集历史</string>
+    <string name="already_select_number_item">已勾选%d个任务</string>
+    <string name="history_filter_type_title">播放历史筛选</string>
+    <string name="history_filter_type_all">全部</string>
+    <string name="history_filter_type_multiple">仅剧集</string>
+    <string name="history_filter_type_single">仅单集</string>
+    <string name="history_current_album_text">第%s集</string>
+    <string name="history_task_time_text">已播%s</string>
+    <string name="title_more">更多</string>
+
+    <!-- setting string -->
+    <string name="settings_set_clearcache_title">正在扫描,请稍后!</string>
+    <string name="settings_set_clearcache_cleared">已清理</string>
+    <string name="settings_set_clearcache_complete_size">共清理%sMB,清理缓存完毕</string>
+    <string name="settings_set_clearcache_complete">清理成功</string>
+    <string name="settings_other_feedback_title">正在提交,请稍后!</string>
+    <string name="settings_other_feedback_net_error">提交失败,请检查网络后重试!</string>
+    <string name="settings_other_feedback_net_busy">提交失败,服务器忙，请稍后重试!</string>
+    <string name="settings_other_feedback_successed">提交成功,谢谢您的反馈!</string>
+    <string name="settings_other_feedback_input_content">请输入反馈内容</string>
+    <string name="settings_other_update_title">检查更新中,请稍后!</string>
+    <string name="settings_other_update_name">百度HD升级中</string>
+    <string name="settings_other_update_playercore_name">百度HD播放内核升级中</string>
+    <string name="settings_other_feedback">反馈意见</string>
+    <string name="settings_other_about">关于</string>
+    <string name="settings_save">保存</string>
+    <string name="settings_new_folder">新建文件夹</string>
+    <string name="settings_save_tips">缓存路径修改为</string>
+    <string name="settings_new_folder_succeed">新建文件夹成功</string>
+    <string name="settings_new_folder_failed">新建文件夹失败</string>
+
+    <!-- 浏览器模式特型页 -->
+    <string name="brow_spec_title">剧集列表</string>
+    <string name="brow_spec_select_title">选择剧集</string>
+    <string name="brow_spec_download_text">离线缓存</string>
+    <string name="brow_spec_play_text">立即播放</string>
+    <string name="brow_spec_stow_text">添加收藏</string>
+    <string name="brow_spec_cancel_text">取消收藏</string>
+    <string name="borw_spec_select_tip_text">请点击选择您要离线缓存的剧集，选择完毕后点击“离线缓存”按钮</string>
+    <string name="brow_spec_select_sdcard_use">已用空间: %.1fG</string>
+    <string name="brow_spec_select_sdcard_left">可用空间: %.1fG</string>
+    <string name="brow_spec_select_sdcard_no_tip">未获取到SD卡，可能由于SD卡未插好</string>
+    <string name="brow_spec_select_sdcard_no">无效大小</string>
+    <string name="brow_spec_can_play_info_text">可播放剧集%d个</string>
+    <string name="brow_spec_resource_text">来源：%s</string>
+    <string name="brow_spec_select_no_item_download">请选择要离线缓存的数据</string>
+    <string name="brow_spec_select_task_exist">任务已存在</string>
+    <!-- 搜索 时添加关键字  百度HD -->
+    <string name="brow_search_insert">  百度HD</string>
+    <string name="brow_address_go_search_text">搜索\"%s\"关键字</string>
+    <string name="brow_search_no_suggestion">暂无搜索提示</string>
+    <string name="brow_play_bdhd">播放BDHD链接</string>
+    <!-- 站点播放历史记录 -->
+    <string name="browser_home_list_no_title">无标题</string>
+    <string name="edit">编辑</string>
+    <string name="complete">完成</string>
+    <string name="player_box_top_text">百度宝盒</string>
+    <string name="playerbox_recommended_searchranking_text">搜索排行榜</string>
+    <string name="playerbox_recommended_hotranking_text">热词标签</string>
+    <string name="playerbox_recommended_websitehistory">播放站点记录</string>
+    <string name="playerbox_recommended_lastplayhistory">最近播放</string>
+    <string name="brow_sniffer_tip_text">检测到%d个剧集资源，点此查看列表</string>
+    <string name="loading">加载中...</string>
+    <string name="dialog_disclaimer_xksyxx">百度HD软件（以下简称“百度HD”）是由著名搜索引擎服务提供商百度公司免费提供的浏览器搜索软件。请用户在安装百度HD前请仔细阅读本安装协议。如果用户选择安装百度HD，即表明用户接受本协议的全部条款。\r\n
+
+一.仅供个人非商业性使用\r\n
+    百度公司授权用户非商业性免费使用百度HD，并为用户提供安装、卸载、提供相关数据服务。这意味着用户可以自主选择安装或卸载以及免费使用百度HD，可以免费使用及百度公司提供的相应数据服务，享受百度HD的升级服务。用户可以非商业性地复制和散发百度HD。\r\n
+    但是如果用户要进行商业性的销售、复制、散发或其他商业活动，例如软件预装和捆绑，必须获得百度公司的事先书面授权和许可。\r\n
+
+    百度HD是百度搜索服务的一部分，请用户在使用百度HD时，仔细阅读并遵守百度搜索引擎的权利声明（www.baidu.com/duty/right.html）和免责声明（www.baidu.com/duty/）。同时，用户应确保不使用任何方式损害和妨碍百度搜索服务，不得从事以下活动，也不得授权或教唆任何第三方从事以下活动：(i) 通过采用任何自动方式、欺诈方式、不真实的方式或欺骗性方式，直接或间接地对任何搜索结果产生查询次数、展示次数或点击次数，包括但不限于人为反复点击、使用漫游器或其他自动化查询工具和/或计算机生成搜索请求和/或欺诈性地使用其他搜索引擎优化服务和/或软件；(ii) 采用任何方式编辑、修改或过滤任何百度提供的搜索结果中所包含的信息或更改其顺序，或者删除、隐藏任何搜索结果或者将其最小化；(iii) 对百度所提供的搜索结果的任一网页（简称“搜索结果页”）进行加框链接；(iv) 将任一搜索结果页重定向到别处、搜索结果页版本不同于直接访问相应的搜索结果页所看到的网页、在包含搜索框的网页和搜索结果页之间散置任何内容，或以其他方式提供不同于从包含搜索框的网页到搜索结果页的直接链接的任何内容；(v)对由任一搜索结果获取的信息或信息的任一部分、副本或衍生信息，采用“抓取”、“spider”、索引或任何其他非暂时性方式加以存储或缓存。\r\n
+
+    百度公司承诺会为百度HD的进一步开发和扩展做相应的工作，并为百度HD提供产品服务支持，如果用户对百度HD有任何意见，或有如何改进的建议，请及时通过Email与我们联系反馈发表您的问题或建议。\r\n
+
+二.知识产权保护\r\n
+    百度HD受国际版权公约、中华人民共和国著作权法及其他知识产权方面的法律法规的保护，其所有知识产权归百度公司所有。用户需承认百度公司拥有对百度HD的所有权利，包括但不限于所有知识产权。“知识产权”包括在专利法、版权法、商标法、反不正当竞争法中等法律规定的任何和所有权利、任何和所有其它所有权以及其中的任何和所有应用、更新、扩展和恢复。\r\n
+
+    用户不得修改、改编、翻译百度HD，或者创作百度HD的派生作品，不得通过反向工程（reverse engineer），反编译（decompile）、反汇编（disassemble）或其他类似行为获得百度HD源代码，否则由此引起的一切法律后果由用户负责，百度公司将依法追究违约方的法律责任。\r\n
+
+    用户不得恶意修改、复制、传播与百度HD相关的材料。如果用户复制和修改传播这些材料，因此而造成对其他人的损害，或者造成对百度公司形象损害，要承担相应的法律责任。用户不得删除、掩盖或更改百度公司的版权声明、商标或其它权利声明。\r\n
+
+三.无担保声明及特别说明\r\n
+    百度公司保证百度HD不含有任何旨在破坏用户计算机数据的病毒及其它恶意代码。百度HD经过详细的测试，但不能保证与所有的软硬件、系统完全兼容。如果出现不兼容的情况，用户可及时通过Email将情况报告百度公司，以获得技术支持。如果无法解决兼容性问题，用户可以直接卸载或使用用户计算机的控制面板中的添加/删除程序功能删除百度HD。\r\n
+
+    由于百度HD可以通过网络等途径下载、传播，对于从非百度公司指定站点下载的百度HD以及从非百度公司发行的介质上获得的百度HD，公司无法保证该软件是否感染计算机病毒、是否隐藏有伪装的特洛伊木马程序等黑客软件，也不承担由此引起的直接和间接损害责任。\r\n
+
+    用户理解并同意自主选择下载和使用百度HD，百度公司不担保百度HD的适销性、针对特定用途的适用性以及任何其他性能。\r\n
+
+    在互联网行业通行的范围内，用户信息及用户行为可能会为百度公司正常记录和使用。但除非为了遵守法律法规的规定或遵照相关政府主管部门的要求，百度公司不会将涉及用户的个人信息提供给任何第三方。  \r\n
+
+四.义务和责任限制及管辖约定\r\n
+    用户可以向百度公司提出咨询和获得百度HD相关的合理技术支持，百度公司此项义务不应超过百度公司的合理承受限度。用户使用百度HD不得有违犯法律，危害网络安全或损害第三方合法权益之行为，否则由此产生的后果用户自负。百度HD安装时生成一个唯一性标识，有助于用户本地机与 Baidu.com服务器进行通讯，检查软件的更新信息，如错误修复程序、补丁程序、增强功能以及更新版本。百度公司承诺不会因此而侵害用户的隐私。\r\n
+
+    鉴于百度HD是免费软件，百度公司不承担用户在使用软件时对用户造成的任何损失的赔偿责任。百度公司保留随时修改本安装协议的权利并无需须逐一通知用户，用户对百度公司修改后的协议如有异议，可选择自行删除百度HD，由此给用户造成的任何损失百度公司均不承担责任。用户继续使用百度HD的行为即表明用户完全同意百度公司对本安装协议的修改。\r\n
+
+    用户同意因使用百度HD所引发的一切争议，提交百度公司所在地人民法院（即北京市海淀区人民法院或遵照级别管辖规定时为北京市海淀区人民法院的上级法院）诉讼解决。\r\n
+
+    对于任何用户因使用或误用百度HD而造成的损失，百度公司概不负责。对于直接、间接、偶发、继发、特殊、惩戒性和惩罚性损害的补偿，无论此类主张根据担保条款、契约、民事侵权行为（包括过失侵权）还是其它法规（即使百度公司已被告知上述损失的可能性），上述责任限制均适用。无论损失因使用或误用百度HD，无法使用百度HD，还是因百度HD的中断、暂停或终止，上述责任限制均适用。尽管未达到有限赔偿和在法律允许的最大范围内的基本意图，上述限制仍适用。\r\n
+
+    此版本百度HD为百度公司所有，且百度公司享有对本协议的最终一切解释权利。 \r\n
+
+2011年7月</string>
+    <string name="dialog_disclaimer_ysbhsm">百度公司非常重视对您隐私的保护，在您使用百度提供的服务前，请您仔细阅读如下声明。\r\n
+
+为了给您提供更准确、更有针对性的服务，百度可能会以如下方式，使用您提交的个人信息。但百度会以高度的勤勉义务对待这些信息，在未征得您许可的情况下，不会将这些信息对外公开或向第三方提供。\r\n
+
+•保有您提供的信息\r\n
+百度会在您自愿选择服务或提供信息的情况下收集您的个人信息，并将这些信息进行整合，以便向您提供更好的用户服务。请您在注册时及时、详尽及准确的提供个人资料，并不断更新注册资料，符合及时、详尽准确的要求。所有原始键入的资料将引用为注册资料。如果因注册信息不真实而引起的问题，由您自行承担相应的后果。请您不要将您的帐号、密码转让或出借予他人使用。如您发现您的帐号遭他人非法使用，应立即通知百度。因黑客行为或用户的保管疏忽导致帐号、密码遭他人非法使用，百度不承担责任。\r\n
+
+
+•cookies等技术的使用\r\n
+百度网站使用cookies，以便您能登录我们的服务，并允许设定您特定的服务选项。\r\n
+运用cookies技术，百度网站能够为您提供更加周到的个性化服务。同时，当您通过百度的联盟网站访问百度时，我们允许将位于百度域的cookies发送给百度的Web服务器。通过使用cookies所收集的任何内容均以集合的、匿名的方式进行。\r\n
+您可以选择接受或拒绝 cookies。您可以通过修改浏览器设置的方式拒绝cookies。如果您选择拒绝cookies，则您可能无法登录或使用依赖于cookies 的百度服务或功能。\r\n
+如果您不希望百度联盟网站基于您的cookie信息在您访问百度联盟网站时，向您推送个性化的推广信息，可以通过隐私保护工具限制我们对cookie信息的使用。\r\n
+
+
+•保有您的使用记录\r\n
+当您使用百度的服务时，服务器会自动记录一些信息，包括URL、IP地址、浏览器的类型和使用的语言以及访问日期和时间等。 \r\n
+
+
+•在如下情况下，百度会遵照您的意愿或法律的规定披露您的个人信息，由此引发的问题将由您个人承担：\r\n
+（1）事先获得您的授权；\r\n
+（2）只有透露你的个人资料，才能提供你所要求的产品和服务；\r\n
+（3）根据有关的法律法规要求；\r\n
+（4）按照相关政府主管部门的要求；\r\n
+（5）为维护百度的合法权益。\r\n
+（6）您同意让第三方共享资料。\r\n
+（7）我们发现您违反了百度公司服务条款或任何其他产品服务的使用规定。\r\n
+（8）我们需要向代表我们提供产品或服务的公司提供资料（除非我们另行通知你，否则这些公司无权使用你的身份识别资料）。\r\n
+隐私权政策的修订：\r\n
+百度公司时常会对隐私权政策进行修改。如果在使用用户个人信息政策方面有修改时，我们会在网页中显著的位置发布相关规定以便及时通知用户。\r\n
+
+问题与建议：\r\n
+如果您还有其他问题和建议，请告知我们。\r\n
+
+百度会始终致力于在充分保护您隐私的前提下，为您提供更优质的体验和服务。\r\n</string>
+    <string name="xkxx">许可使用协议</string>
+    <string name="yssm">隐私保护声明</string>
+
+    <!-- 错误页文案 -->
+    <string name="webview_error_fail_resion">可能的原因有：</string>
+    <string name="webview_error_fail_resion_one">• 无法连接网络</string>
+    <string name="webview_error_fail_resion_two">• 该网页不存在或出现故障</string>
+    <string name="web_setting">设置网络>></string>
+    <string name="search_play">播放</string>    
+	<string name="multi_window_max_toast_string">最多开启8个窗口</string>
+	<string name="home_page_title_text">空白页</string>
+</resources>

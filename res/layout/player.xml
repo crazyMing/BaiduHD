@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 播放View -->
+    <RelativeLayout
+        android:id="@+id/player_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/player_main" />
+
+    <include layout="@layout/player_cache_error_layout" />
+
+    <com.baidu.hd.debug.P2PDownloadView
+        android:id="@+id/debug_download_view"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <com.baidu.hd.debug.P2PSettingView
+        android:id="@+id/debug_p2p_setting_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <com.baidu.hd.debug.TaskListView
+        android:id="@+id/debug_task_list_view"
+        android:layout_width="400dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:visibility="gone" />
+    
+</RelativeLayout>

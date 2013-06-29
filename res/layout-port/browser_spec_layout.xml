@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFAFAFA"
+	>
+	    
+    <include
+        android:id="@+id/float_title_layout"
+		android:layout_width="fill_parent" 
+		android:layout_height="53dip"
+        layout="@layout/floattitlelayout"  
+        />
+    
+    <LinearLayout 
+        android:id="@+id/brow_spec_top_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/float_title_layout"
+        android:gravity="center"
+        >
+        <ImageView 
+            android:id="@+id/brow_spec_album_iamge"
+            android:layout_width="300dip"
+            android:layout_height="120dip"
+            android:padding="10dip"
+            android:layout_weight="2"
+            android:src="@drawable/album"
+            android:layout_gravity="center_vertical|center_horizontal"/>  
+              
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="12dip"
+            >
+            
+            <TextView 
+                android:id="@+id/brow_spec_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textColor="@android:color/black"
+                android:textSize="17dip"
+                android:maxLines="3"
+                android:ellipsize="end"
+                />
+            
+            <TextView 
+                android:id="@+id/brow_sepc_can_play_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="16dip"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="2.0dip"
+                android:layout_gravity="left"
+                />
+            
+            <TextView
+                android:id="@+id/brow_spec_resource"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+         		android:layout_marginTop="2.0dip"
+                android:textSize="16dip"
+                />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/brow_spec_ctrl"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_below="@id/brow_spec_top_info"
+        >
+        
+        <Button 
+            android:id="@+id/brow_spec_download"
+            android:layout_centerHorizontal="true"
+            android:text="@string/brow_spec_download_text"
+			style="@style/brow_spec_ctrl_btn"
+            />
+        
+        <Button 
+            android:id="@+id/brow_spec_play"
+            android:text="@string/brow_spec_play_text"
+            android:layout_toLeftOf="@id/brow_spec_download"
+            android:layout_marginRight="10.0dip"
+            android:layout_width="92.0dip"
+            android:layout_height="35.0dip"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+			android:textColor="@android:color/white"
+            android:background="@drawable/brow_spec_play_background"
+            />
+        
+        <Button 
+            android:id="@+id/brow_spec_stow"
+            android:text="@string/brow_spec_stow_text"
+            android:layout_toRightOf="@id/brow_spec_download"
+            android:layout_marginLeft="10.0dip"
+            style="@style/brow_spec_ctrl_btn"
+            />
+        
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/brow_sepc_divide"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#FFEAEAEA"
+        android:layout_below="@id/brow_spec_ctrl"
+        android:layout_marginTop="5.0dip"
+        />
+    
+    <!-- 剧集列表 -->
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brow_sepc_divide"
+        >
+	    <LinearLayout 
+	        android:id="@+id/brow_sepc_list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal"
+	        >
+	    </LinearLayout>
+        
+    </ScrollView>
+    
+    
+    
+</RelativeLayout>

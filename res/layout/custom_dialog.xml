@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_dialog_main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_full_holo_light"
+    android:drawingCacheQuality="high"
+    android:orientation="vertical" 
+    >
+	<!-- #fffdf2e1 -->
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="vertical" 
+        >
+        <TextView
+            android:id="@+id/title"
+            style="@style/DialogText_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:paddingLeft="20.0dip" 
+	    android:paddingRight="20.0dip"
+	    android:layout_marginBottom="5dip"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/message"
+            style="@style/DialogText_Message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        
+        <ScrollView
+            android:id="@+id/scrollview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="130dip"
+	        android:background="@null"
+	        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" 
+	        >
+		    <TextView
+            	android:id="@+id/scroll_message"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:lineSpacingMultiplier="1.4"
+		        android:textSize="16sp"
+				android:textColor="#ff333333"
+				/>
+		</ScrollView>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical" 
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/spilt_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/content_layout"
+        android:scaleType="fitXY"
+        android:background="#ffdfdfdf"
+        />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spilt_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_weight="1.0"
+            android:background="#fff7f7f7"
+            android:singleLine="true"
+            android:textColor="@color/text_color_gray_black"
+            android:textSize="@dimen/text_size_large" />
+		
+         <ImageView
+	        android:id="@+id/spilt_line_button"
+	        android:layout_width="1.0dip"
+	        android:layout_height="fill_parent"
+	        android:background="#ffdfdfdf"
+	        />
+         
+        <Button
+            android:id="@+id/expandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_weight="1.0"
+            android:background="#fff7f7f7"
+            android:singleLine="true"
+            android:textColor="@color/normal_textcolor_black"
+            android:textSize="@dimen/text_size_large" />
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_weight="1.0"
+            android:background="#fff7f7f7"
+            android:singleLine="true"
+            android:textColor="@color/normal_textcolor_black"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+</RelativeLayout>

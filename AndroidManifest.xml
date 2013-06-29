@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baidu.hd"
+    android:versionCode="0"
+    android:versionName="255.255.255.255" >
+    
+    <supports-screens android:largeScreens="true"
+		android:normalScreens="true" android:smallScreens="true"
+		android:resizeable="true" android:anyDensity="true" />
+    
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOG" /> 
+    <uses-permission android:name="android.permission.READ_LOGS" /> 
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".BaiduHD"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+		<meta-data android:name="BaiduMobAd_STAT_ID" android:value="fe11a15277" />
+		<meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true" />
+		<meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START" />
+		<meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false" />
+
+        <!-- 欢迎页面 
+        <activity
+            android:name=".NativeBaiduSearchActivity"
+ 		    android:theme="@style/NoTitle.AnimationTranslucent"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        -->
+        
+        
+        <!-- 开始帮助页面  -->
+		<activity
+		    android:name=".StartHelpActivity"
+		    android:theme="@android:style/Theme.NoTitleBar"
+		    android:screenOrientation="portrait"
+		    android:launchMode="singleTop"
+		    >
+		</activity>
+
+        <activity
+            android:name=".MainTabActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            >
+        </activity>
+        
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoTitle"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="com.baidu.hd.action.BROWSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.baidu.hd.action.PLAYER_HOME"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name=".VoiceSearchActivity"
+                android:theme="@style/VoiceViewTheme"
+                android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:launchMode="singleTask" >
+            <!-- Handle SEARCH_LONG_PRESS action. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH_LONG_PRESS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            <!-- 浏览器接口 -->
+            <intent-filter>
+                <action android:name="com.baidu.searchbox.action.VOICESEARCH"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            <!-- ics 桌面搜索框 语音搜索接口 -->
+            <intent-filter>
+                <action android:name="android.speech.action.WEB_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+  
+        </activity>   
+        
+        <activity
+            android:name=".SearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@style/NoTitle.AnimationTranslucent"
+            android:windowSoftInputMode="adjustPan" >
+
+            <!-- Handle global search. -->
+            <intent-filter>
+                <action android:name="android.search.action.GLOBAL_SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 开放搜索 -->
+            <intent-filter>
+                <action android:name="com.baidu.hd.action.BAIDU_SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 
+ 		<activity android:name=".CombinedBookmarkHistoryActivity"     
+ 		    android:theme="@style/NoTitle.AnimationTranslucent"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+		/>
+ 		
+ 		<activity 
+ 		    android:name=".BrowserSpecActivity"
+ 		    android:theme="@style/NoTitle.AnimationTranslucent"
+            android:launchMode="singleTask"
+ 		/>
+ 		
+ 		<activity 
+ 		    android:name=".BrowSpecSelectActivity"
+ 		    android:theme="@style/NoTitle.AnimationTranslucent"
+ 		    android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask" />
+ 		
+		<activity android:name=".PlayerhomeFloatDialog"
+		    android:windowSoftInputMode="adjustPan"
+			android:theme="@style/NoTitleDialog"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+      
+        <!-- 浏览器首页 -->
+        <!-- 首页 -->
+        <activity
+            android:name=".web.HomeActivity">
+        </activity>
+
+        <!-- 搜索页面 -->
+        <activity
+            android:name=".web.SearchActivity">
+        </activity>
+
+        <!-- 下载选集页 -->
+        <activity
+            android:name=".web.DownloadPageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+      <!-- add by sunjianshun 2012.10.25 -->
+		<activity android:name=".personal.PersonalActivity"
+		    android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- add by sunjianshun 2012.10.26 -->
+		<activity android:name=".settings.SettingsActivity"
+		    android:theme="@style/NoTitle.AnimationTranslucent"
+            android:windowSoftInputMode="adjustPan"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- add by sunjianshun 2012.10.26 -->
+		<activity android:name=".personal.FileBrowserActivity"
+		    android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- add by sunjianshun 2012.10.27 -->
+		<activity android:name=".settings.SettingsFeedbackActivity"
+		    android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- add by sunjianshun 2012.12.27 -->
+		<activity android:name=".settings.SettingsBufferPathActivity"
+		     android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- add by sunjianshun 2012.12.27 -->
+		<activity android:name=".settings.SettingsCreateNewFolderDialog"
+		    android:windowSoftInputMode="adjustPan"
+			 android:theme="@style/NoTitleDialog"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- add by sunjianshun 2012.12.28 -->
+		<activity android:name=".settings.SettingsFolderExistedTipDialog"
+		    android:windowSoftInputMode="adjustPan"
+			 android:theme="@style/NoTitleDialog"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- add by sunjianshun 2012.10.27 -->
+		<activity android:name=".personal.PersonalDeleteDialog"
+		    android:windowSoftInputMode="adjustPan"
+			 android:theme="@style/NoTitleDialog"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- add by sunjianshun 2012.10.27 -->
+		<activity android:name=".personal.PersonalMenuDialog"
+		    android:windowSoftInputMode="adjustPan"
+			 android:theme="@style/NoTitleDialog"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- add by sunjianshun 2012.11.02 -->
+		<activity android:name=".settings.SettingsAboutActivity"
+			android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- add by sunjianshun 2012.11.02 -->
+		<activity android:name=".settings.DocShowActivity"
+			android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- add by sunjianshun 2012.11.02 -->
+		<activity android:name=".settings.MenuClearHistoryDialog"
+			android:theme="@style/NoTitleDialog"
+            android:windowSoftInputMode="adjustPan"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<!-- 隐私设置对话框 -->
+       	<activity 
+       	    android:name=".home.PrivacySettingDialog" 
+       	    android:windowSoftInputMode="adjustPan"
+			android:theme="@style/NoTitleDialog"
+			android:configChanges="orientation|keyboardHidden">
+       	</activity>
+
+
+        <!-- 搜索结果页 -->
+        <activity
+            android:name=".web.SearchResultActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        
+        <!-- 特型页面 -->
+        <activity
+            android:name=".web.SpecActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+        </activity>
+        
+        <!-- 第三方页面 -->
+        <activity
+            android:name=".web.ThirdPartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            >
+        </activity>
+
+        <!-- 播放器页面 -->
+        <activity
+            android:name=".player.PlayerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="*/*" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.mp4" />
+                <data android:pathPattern=".*\\.rm" />
+                <data android:pathPattern=".*\\.rmvb" />
+                <data android:pathPattern=".*\\.3gp" />
+                <data android:pathPattern=".*\\.mkv" />
+                <data android:pathPattern=".*\\.m3u8" />
+            </intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />  
+                <category android:name="android.intent.category.DEFAULT" />  
+				<category android:name="android.intent.category.BROWSABLE" />  
+                <data android:scheme="bdvideo" android:host="play"></data>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".settings.SettingsFeedBackActivity"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        
+        <!-- 文件夹浏览页面 -->
+        <activity
+            android:name=".local.FileBrowserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <!-- 浏览器模式标签历史页 -->
+        <activity 
+            android:name=".browserhistory.BrowserHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">            
+        </activity>
+
+        <!-- 测试 -->
+        <activity
+            android:name=".test.RegionActivity">
+        </activity>
+        <activity
+            android:name=".test.SiteActivity">
+        </activity>
+        <activity
+            android:name=".test.HomeActivity">
+        </activity>
+        <activity 
+            android:name=".test.BrowserHomeTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">            
+        </activity>
+
+        <service android:name=".upgrade.RemoteUpgradeImp$DownLoadService"/>
+        <service android:name=".detect.DetectService" />
+        <service
+            android:name="com.baidu.player.download.DownloadService"
+            android:process=":download" />
+        
+        <service android:name=".InitNetDetailService" />
+        
+        <service 
+            android:name=".invokeapp.HttpService"
+            android:process=":httpservice"/>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    >  
+  
+    <ImageView
+        android:id="@+id/remote_app_icon"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" 
+        />  
+  
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_toRightOf="@id/remote_app_icon"
+	    >
+	    <TextView  
+	        android:id="@+id/remote_progress_title"  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10.0dip"
+	        android:gravity="left"
+	        android:layout_alignParentTop="true"
+	        android:text="百度HD升级中"
+	        />
+	    
+	    <ProgressBar  
+	        android:id="@+id/remote_progressbar"  
+	        style="?android:attr/progressBarStyleHorizontal"  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="8.0dip"
+	        android:layout_below="@id/remote_progress_title"
+	        android:layout_marginTop="5dip"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginBottom="5dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_toRightOf="@id/remote_app_icon"
+	        android:max="100"
+		    android:progressDrawable="@drawable/download_pb"
+	        />  
+	  
+	    <RelativeLayout 
+	         android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content"  
+	        android:layout_below="@id/remote_progressbar"  
+	        android:layout_marginRight="10dip"
+	        >
+	 	
+	        <TextView  
+	        android:id="@+id/remote_downloaded_rate"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:layout_marginLeft="10.0dip"
+	        android:layout_alignParentLeft="true"  
+	        android:layout_marginRight="10dip"
+	        android:text="已下载安装包，点击安装"
+	        android:visibility="visible"
+	        />
+	        
+	        <TextView  
+	        android:id="@+id/remote_progress_rate"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:layout_alignParentRight="true"  
+	        android:layout_marginRight="10dip"
+	        android:text="%"
+	        />
+	    </RelativeLayout>
+	  </RelativeLayout>
+</RelativeLayout>

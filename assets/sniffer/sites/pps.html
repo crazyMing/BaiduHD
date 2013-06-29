@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <SCRIPT src="../jquery.js"></SCRIPT>
+  <SCRIPT src="../sniffer.js"></SCRIPT>
+ </HEAD>
+
+ <SCRIPT>
+
+	sniffer.siteName = 'pps';
+
+	function onStart() {
+
+		sniffer.getHtml(function(html) {
+			sniffer.getScript(html, function(script) {
+
+				try
+				{
+					eval(script);
+				}
+				catch (e)
+				{
+				}
+				try
+				{
+					sniffer.success(video.html5_url);
+					return true;
+				}
+				catch (e)
+				{
+				}
+				return false;
+			});
+		});
+	}
+ </SCRIPT>
+</HTML>

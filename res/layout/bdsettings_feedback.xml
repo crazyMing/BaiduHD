@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings 中 about 页面布局文件 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    >
+
+    <!-- 顶部标题栏 -->
+	<RelativeLayout android:id="@+id/bdfeedback_title_bar"
+		style="@style/title_bar_background">
+		<!-- 返回按钮 -->
+		<Button android:id="@+id/btn_titlebar_back"
+		    style="@style/title_bar_btn_cancel"/>
+		<!-- 标题名称 -->
+		<TextView style="@style/title_bar_title"
+			android:text="反馈意见" />
+	</RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" 
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="15dip"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="18sp"
+				android:textColor="@color/settings_feedback_text_black"
+		        android:text="感谢您使用百度HD，欢迎反馈任何意见和建议，帮助我们做的更好，谢谢！" 
+				/>        
+		
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="30dip"
+				android:textSize="18sp"
+				android:textColor="@color/settings_feedback_text_deepblack"
+		        android:text="在此输入您的反馈意见：" 
+				/>        
+			
+			<EditText 
+				android:id="@+id/feedback_info_content"
+				android:hint="请输入您宝贵的反馈意见" 
+				android:gravity="left"
+				android:layout_gravity="left" 
+				android:layout_width="fill_parent" 
+				android:layout_height="145dip"
+				android:padding="15dip"
+				android:layout_marginRight="8dip"
+		        android:background="@drawable/search_edit"
+		        style="@style/searchbox_edittext_style"
+				android:editable="true"
+				android:singleLine="false"
+		        />
+			
+			<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="30dip"
+				android:textSize="18sp"
+				android:textColor="@color/settings_feedback_text_deepblack"
+		        android:text="留下您的联系方式(QQ/手机号/邮箱均可)" 
+				/>        
+			
+			<RelativeLayout
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    >
+				<EditText 
+					android:id="@+id/feedback_info_contact"
+					android:hint="请输入您的联系方式" 
+					android:gravity="left"
+					android:layout_gravity="left"
+					android:layout_toLeftOf="@+id/feedback_info_contact_text"
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:layout_marginRight="10dip"
+					android:padding="15dip"
+			        android:background="@drawable/search_edit"
+			        style="@style/searchbox_edittext_style"
+					android:editable="true"
+					android:singleLine="true"
+			        />
+				<TextView
+				    android:id="@+id/feedback_info_contact_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+					android:textSize="16sp"
+					android:textColor="@color/settings_feedback_text_black"
+			        android:text="选填" 
+					/>
+			</RelativeLayout>
+
+			<Button 
+		       	android:id="@+id/submit" 
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_gravity="center_horizontal"
+				android:layout_marginTop="25dip"
+				android:paddingTop="10dip"
+				android:paddingBottom="10dip"
+				android:paddingLeft="30dip"
+				android:paddingRight="40dip"
+		       	android:gravity="center" 
+				android:textSize="18sp" 
+				android:textColor="@color/settings_feedback_text_black" 
+				android:text="提交"
+		       	android:background="@drawable/button_normal_white" 
+		       	/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

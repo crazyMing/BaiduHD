@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300.0dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:background="@drawable/dialog_full_holo_light"
+    android:orientation="vertical" >
+	<!-- #fffdf2e1 -->
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="vertical" 
+        >
+        <TextView
+            android:id="@+id/title"
+            style="@style/DialogText_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="提示"
+            android:textSize="18sp"
+            />
+        <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="1.0dip"
+	        android:background="#ffcfcfcf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:paddingLeft="20.0dip" 
+	    android:paddingRight="20.0dip"
+	    android:layout_marginBottom="5dip"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/message"
+            style="@style/DialogText_Message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+			android:text="已有同名文件夹,请返回修改!"
+			android:textSize="18sp"
+            />
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/spilt_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/content_layout"
+        android:scaleType="fitXY"
+        android:background="#ffcfcfcf"
+        />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spilt_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_weight="1.0"
+            android:background="#ffdfdfdf"
+            android:singleLine="true"
+            android:textColor="@color/text_color_gray_black"
+            android:textSize="@dimen/text_size_large"
+            android:text="返回"
+            android:clickable="true"  />
+		
+         
+    </LinearLayout>
+
+</RelativeLayout>

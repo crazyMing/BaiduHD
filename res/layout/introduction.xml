@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:player="http://schemas.android.com/apk/res/com.baidu.hd"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.baidu.hd.ui.IntroductionViewDragableSpace
+        android:id="@+id/personal_scroll_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/window_background_color"
+        android:isScrollContainer="true"
+        player:isrepeat="false" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/introduction_01"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:id="@+id/introduction_close_cirle_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:src="@drawable/help_close" />
+        </RelativeLayout>
+
+    </com.baidu.hd.ui.IntroductionViewDragableSpace>
+
+</LinearLayout>

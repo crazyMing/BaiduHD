@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="float_searchbox_height">45dip</dimen>
+	<dimen name="bottom_toolbar_height">46.6dip</dimen>
+	<dimen name="checkmark_area">40dip</dimen>
+	<dimen name="about_margin_vertical">12dip</dimen>
+	<dimen name="about_margin_horizontal">13dip</dimen>
+	<dimen name="workspace_dot_margin">5dip</dimen>
+	<dimen name="browseraddview_height">120dip</dimen>
+	<dimen name="clear_content_icon_size">30dip</dimen>
+	<dimen name="popup_window_padding">32dip</dimen>
+	<dimen name="newding_pop_in_home_top">42dip</dimen>
+	<dimen name="newding_pop_in_home_right">6.6dip</dimen>
+	<dimen name="digital_clock_time_margin_top">0dip</dimen>
+    <dimen name="digital_clock_time_margin_left">13.3dip</dimen>
+    <dimen name="digital_clock_time_margin_right">13.3dip</dimen>
+    <dimen name="digital_clock_time_divider_top">39.3dip</dimen>
+    
+    <dimen name="digital_clock_time_width">68dip</dimen>
+    <dimen name="digital_clock_time_height">82.6dip</dimen>
+    <dimen name="digital_clock_time_height_half">40dip</dimen>
+    <dimen name="digital_clock_time_textsize">56dip</dimen>
+    <dimen name="digital_clock_time_textoffset">3dip</dimen>
+    
+    <dimen name="half_screen_width">240dip</dimen>
+    
+    <dimen name="tips_width">82dip</dimen>
+    
+    <dimen name="home_navigation_panel_height">140dip</dimen>
+    
+</resources>

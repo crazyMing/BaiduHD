@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/multi_window_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="4dip"
+    android:paddingRight="4dip"
+    android:background="@color/background_transparent"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <View
+        android:id="@+id/popmenu_outside"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/background_transparent" />
+
+    <LinearLayout
+        android:id="@+id/multi_window_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/multi_window_root_bg"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+    	android:gravity="center" 
+		>
+
+        <ListView
+            android:id="@+id/multi_window_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:footerDividersEnabled="false"
+            android:cacheColorHint="#00000000">
+        </ListView>
+		<View android:layout_width="fill_parent"
+		    android:layout_height="0.5dip"
+		    android:background="@drawable/multi_window_item_devise"/>
+        <LinearLayout
+            android:id="@+id/multi_window_new_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/multi_window_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/multi_window_new_window"
+                android:drawablePadding="10dip"
+                android:padding="10dip"
+                android:text="新建窗口"
+                android:textColor="@color/background_white"
+                android:background="@drawable/multi_window_item_bg_selector"
+                android:textSize="18dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

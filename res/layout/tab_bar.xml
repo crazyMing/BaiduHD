@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="fill_parent" 
+        android:layout_height="45dip"
+        android:orientation="horizontal"
+        android:background="@color/text_color_gray_black"
+        >
+    <com.baidu.browser.ui.TabScrollView
+        android:id="@+id/tab_scroolview"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_weight="1"
+        android:layout_marginBottom="0dip"
+        />
+    
+            
+   <ImageView android:id="@+id/addtab_btn"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:paddingTop="12dip"
+        android:paddingBottom="12dip"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/tabbar_add_label_seletor"
+        />
+   
+</LinearLayout>

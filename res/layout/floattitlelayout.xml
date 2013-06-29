@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.hd.ctrl.FloatTitleLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/float_title_layout"
+    style="@style/title_bar_background" >
+
+    
+    <TextView
+        android:id="@+id/float_GoBackBtn"
+        style="@style/title_bar_btn_cancel"
+        android:gravity="center"
+ 			 />
+    
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/black"
+       	android:gravity="center" android:textSize="18dip"
+       />  
+       
+    <TextView
+        android:id="@+id/brow_spec_title"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18dip"
+        android:singleLine="true"
+        android:visibility="gone"/>
+       
+    <RelativeLayout  
+        android:id="@+id/title2"
+	    android:orientation="vertical"  
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="150dip"
+	    android:layout_centerInParent="true"
+	    android:visibility="visible"
+	    >
+	    <TextView
+	        android:id="@+id/title"
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3dip"
+	        android:layout_centerHorizontal="true"
+	        android:textColor="@color/black"
+	        android:textSize="18dip"
+	        android:singleLine="true"
+	        />
+	    <TextView
+	        android:id="@+id/subtitle"
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@id/title"
+	        android:textColor="@color/black"
+	        android:textSize="14dip"
+	        android:singleLine="true"
+	        />  
+	 </RelativeLayout> 
+	 
+    <Button
+         android:id="@+id/float_titlebar_right_button"
+         android:layout_width="70dip"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="@dimen/edit_letter_margin_right"
+         android:background="@drawable/button_normal_blue"
+         android:text="离线缓存"
+         android:textSize="16dip"
+         android:textColor="@drawable/button_normal_blue_text"
+         android:visibility="gone"
+         />
+</com.baidu.hd.ctrl.FloatTitleLayout>

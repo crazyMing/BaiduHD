@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- 主界面 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/MainRoot" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<FrameLayout android:id="@+id/layout_for_fragment"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" />
+	
+	<!-- 用来临时放置Browser对应的View，来配合进入退出时的特效动画。
+    <FrameLayout android:id="@+id/browser_animation_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+     -->
+</FrameLayout>

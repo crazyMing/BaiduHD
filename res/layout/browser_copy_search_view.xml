@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.browser.explore.BPExplorePopView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/btn_wv_copy"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_margin="4dip"
+        android:background="@drawable/browser_select_btn_bg" >
+
+        <TextView
+            android:layout_width="72dip"
+            android:layout_height="48dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/copy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_menu_item_tv_font_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/select_separator_one"
+        android:layout_width="wrap_content"
+        android:layout_height="48dip"
+        android:layout_gravity="center"
+        android:background="@drawable/browser_select_separator"
+        android:src="@null" />
+
+    <LinearLayout
+        android:id="@+id/btn_wv_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_margin="4dip"
+        android:background="@drawable/browser_select_btn_bg" >
+
+        <TextView
+            android:layout_width="72dip"
+            android:layout_height="48dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/context_menu_item_tv_font_size" />
+    </LinearLayout>
+
+</com.baidu.browser.explore.BPExplorePopView>

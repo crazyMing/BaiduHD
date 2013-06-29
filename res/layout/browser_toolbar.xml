@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="match_parent"   		
+  	android:layout_height="@dimen/bottom_toolbar_height"
+  	android:layout_gravity="bottom">
+        
+        <LinearLayout 
+            android:id="@+id/menu_panel"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_toolbar_bg"
+            android:layout_alignParentBottom="true">
+            
+            <ImageButton 
+                android:id="@+id/browser_back"
+                android:background="@drawable/button_back_selector"
+                android:src="@drawable/browser_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+            />
+            <ImageButton 
+                android:id="@+id/browser_forward"
+                android:background="@drawable/button_back_selector"
+                android:src="@drawable/browser_forward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+            />
+            <ImageButton 
+                android:id="@+id/browser_bottom_menu"
+                android:background="@drawable/button_back_selector"
+                android:src="@drawable/browser_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+            />
+            <ImageButton 
+                android:id="@+id/browser_album"
+                android:background="@drawable/button_back_selector"
+                android:src="@drawable/browser_album"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+            />
+            <ImageButton 
+                android:id="@+id/browser_multiwindows"
+                android:background="@drawable/button_back_selector"
+                android:src="@drawable/bottombar_windows"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            
+            <ImageView  
+	            android:layout_width="wrap_content" android:layout_height="fill_parent" 
+	            android:background="@drawable/bottor_bar_divider"
+	            android:layout_gravity="center" android:gravity="center" />
+            
+            <ImageButton 
+                android:id="@+id/browser_personal"
+                android:background="@drawable/button_back_selector"
+                android:src="@drawable/browser_personal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+ 
+</RelativeLayout>

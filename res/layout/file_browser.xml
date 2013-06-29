@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FileBrowserActivity 布局 -->
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+<!-- 
+    <include
+        android:id="@+id/float_title_layout"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+        layout="@layout/floattitlelayout"  
+        />
+-->
+	<!-- 顶部标题栏 -->
+	<RelativeLayout android:id="@+id/float_title_layout"
+		style="@style/title_bar_background">
+		<!-- 返回按钮 -->
+		<Button android:id="@+id/btn_titlebar_back"
+		    style="@style/title_bar_btn_cancel"/>
+		<!-- 标题名称 -->
+		<TextView style="@style/title_bar_title"
+			android:text="选择目录" />
+	</RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/folder_titlebar_dir"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:background="@drawable/toolbar_background"
+        android:layout_below="@id/float_title_layout"        
+        android:orientation="vertical" >
+
+		<TextView
+            android:id="@+id/folder_titlebar_dir_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/titlebar_submit_margin_left"
+            android:text="显示路径"
+            android:singleLine="true"
+            android:textColor="@color/listview_description_text"
+            android:textSize="14sp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusableInTouchMode="true"
+            />
+		
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/folder_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"         
+        android:background="@drawable/toolbar_background"
+        android:orientation="horizontal"
+        >
+        
+        <Button
+            android:id="@+id/folder_bottombar_select_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/button_normal_white"
+            android:text="全选"
+            android:textSize="14sp"
+            android:textColor="@drawable/button_normal_white_text"
+            android:visibility="visible"
+            />
+        
+        <Button
+            android:id="@+id/folder_bottombar_import_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"            
+            android:background="@drawable/button_normal_white"
+            android:text="添加到列表"
+            android:textSize="14sp"
+            android:textColor="@drawable/button_normal_white_text"
+            android:visibility="visible"
+            android:enabled="false"
+            />
+        
+   	</LinearLayout>
+   		
+    <RelativeLayout
+        android:id="@+id/folder_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:background="@color/background_web_light_gray"
+        android:layout_below="@id/folder_titlebar_dir"
+        android:layout_above="@id/folder_bottombar"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/folder_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/listview_normal_bg"
+            android:cacheColorHint="@null"
+            android:divider="@color/listview_normal_divide"
+            android:dividerHeight="1dip"
+            android:fastScrollEnabled="true"
+            >
+        </ListView>    
+   <!--      
+        <include 
+            android:visibility="invisible" 
+            layout="@layout/common_background_layout" 
+            />
+    -->
+    </RelativeLayout>
+    
+    
+    
+</RelativeLayout>

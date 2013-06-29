@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.hd.personal.HistoryPage 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <!-- 底部 -->
+
+    <LinearLayout
+        android:id="@+id/per_history_footer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <!-- 全选/删除 -->
+
+        <include
+            android:id="@+id/per_history_select_delete_bar"
+            layout="@layout/personal_select_delete_bar"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- 列表布局 -->
+
+    <RelativeLayout
+        android:id="@+id/per_history_center_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/per_history_footer_layout"
+        android:layout_alignParentTop="true"
+        android:background="@color/background_web_light_gray"
+        android:orientation="vertical"
+        >
+        
+        <ListView
+            android:id="@+id/per_history_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/listview_normal_bg"
+            android:cacheColorHint="@null"
+            android:divider="@color/listview_normal_divide"
+            android:dividerHeight="1dip"
+            android:fastScrollEnabled="true"
+            android:visibility="gone" />
+        
+        <LinearLayout 
+            android:id="@+id/per_history_none"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+
+            <ImageView
+                android:id="@+id/per_history_none_video_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/picture_none_video" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:text="您还没有播放历史"
+                android:textColor="@color/normal_textcolor_gray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:text="播放过的网络视频会显示在这里"
+                android:textColor="@color/normal_textcolor_gray"
+                android:textSize="14sp" /> 
+        </LinearLayout>
+    
+    </RelativeLayout>
+
+</com.baidu.hd.personal.HistoryPage>

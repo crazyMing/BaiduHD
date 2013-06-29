@@ -1,0 +1,73 @@
+
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <SCRIPT src="../jquery.js"></SCRIPT>
+  <SCRIPT src="../sniffer.js"></SCRIPT>
+ </HEAD>
+
+ <SCRIPT>
+
+	sniffer.siteName = 'ifeng';
+
+	function onStart() {
+
+		sniffer.getHtml(function(html) {
+
+			if(!getId(html)) { 
+				return;
+			}
+
+			var url = 'http://partner.itv.ifeng.com/IfengVideoSearch/getplayermsgnew.aspx?msg=' + ifeng_id + '&callback=html5video&param=playermsg';
+			sniffer.getText(url, 'text', function(data) {
+				try
+				{
+					eval(data);
+				}
+				catch (e)
+				{
+					sniffer.exception(e);
+					sniffer.fail('invalid text');
+				}
+			});
+		});
+	}
+
+	function html5video(json) {
+		sniffer.success( json.parts ? json.parts : json.videoplayurl );
+	}
+
+	function getId(html) {
+
+		sniffer.getScript(html, function(script) {
+
+			try
+			{
+				eval(script);
+			}
+			catch (e)
+			{
+			}
+
+			if(typeof videoinfo == 'undefined') {
+
+				return false;
+			} else {
+
+				ifeng_id = videoinfo.id;
+				return true;
+			}
+		}, '<script type="text/javascript">');
+
+		if(sniffer.checkStr(ifeng_id)) {
+			return true;
+		} else {
+			sniffer.fail('cannot found id');
+			return false;
+		}
+	}
+
+	var ifeng_id = null;
+
+ </SCRIPT>
+</HTML>

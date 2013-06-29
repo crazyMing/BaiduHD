@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnNetwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NetworkTest" />
+    
+    <Button
+        android:id="@+id/btn_upload_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UploadLog" />
+    
+    <Button 
+        android:id="@+id/btnInvokeApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="InvokeApp"/>
+    
+    <Button
+        android:id="@+id/btn_crash_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crash Main"
+        />
+    
+    <Button
+        android:id="@+id/btn_crash_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crash Download" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+        
+        <EditText
+	        android:id="@+id/txt_task_info"
+	        android:layout_width="100px"
+	        android:layout_height="wrap_content" />
+
+	    <Button
+	        android:id="@+id/btn_task_set_log_level"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="LogLevel" />
+	       
+	    <Button
+	        android:id="@+id/btn_task_limit_speed"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="LimitSpeed" />
+	       
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+        
+		<EditText
+	        android:id="@+id/txt_sniffer_url"
+	        android:layout_width="300px"
+	        android:layout_height="wrap_content"
+	        android:hint="url here" />
+
+	    <Button
+	        android:id="@+id/btn_sniffer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Sniffer" />
+
+	    <Button
+	        android:id="@+id/btn_small_sniffer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="SmallSniffer" />
+	        
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+        
+		<EditText
+	        android:id="@+id/txt_web_url"
+	        android:layout_width="300px"
+	        android:layout_height="wrap_content"
+	        android:hint="url here" />
+
+	    <Button
+	        android:id="@+id/btn_web"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Web"/>
+    
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/test_region_launch_browserHistoryActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go" />
+
+        <Button
+            android:id="@+id/test_region_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bookmark" />
+
+        <EditText
+            android:id="@+id/test_region_history_url"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:hint="url here" />
+
+        <Button
+            android:id="@+id/test_region_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search" />
+
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_browser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="browser model"
+        />
+
+</LinearLayout>

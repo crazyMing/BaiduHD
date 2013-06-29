@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/multiwindow_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/multi_window_item_height" 
+    android:background="@drawable/multiwindow_list_selector"
+    >
+
+    <ImageView
+        android:id="@+id/multiwindow_item_icon"
+        android:layout_width="20.3dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:duplicateParentState="true"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:src="@drawable/multi_window_item_icon"
+		/>
+    <ImageView 
+        android:id="@+id/multiwindow_item_delete"
+        android:layout_width="43.3dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:duplicateParentState="true"
+        android:padding="8.33dip"
+        android:layout_marginRight="4.3dip"
+        android:scaleType="centerInside" 
+        android:src="@drawable/multi_window_item_close_selector"
+        />
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/multiwindow_item_delete"
+        android:layout_toRightOf="@id/multiwindow_item_icon"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/multiwindow_item_title"
+            android:layout_width="fill_parent"
+            android:layout_height="25dip"
+            android:duplicateParentState="true"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/multiwindow_item_title_color"
+            android:textSize="18.6dip" 
+            android:paddingBottom="3dip"
+            />
+        <TextView
+            android:id="@+id/multiwindow_item_description"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:duplicateParentState="true"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/multiwindow_item_description_color"
+            android:textSize="12dip" 
+            />
+
+    </LinearLayout>
+    
+	<View android:layout_width="fill_parent"
+	    android:layout_height="1dip"
+	    android:background="@drawable/multi_window_item_devise"
+	    android:layout_alignParentBottom="true"
+	    />
+	    
+
+</RelativeLayout>

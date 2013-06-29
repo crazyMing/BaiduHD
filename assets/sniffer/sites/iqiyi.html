@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <SCRIPT src="../jquery.js"></SCRIPT>
+  <SCRIPT src="../sniffer.js"></SCRIPT>
+ </HEAD>
+
+ <SCRIPT>
+
+	sniffer.siteName = 'iqiyi';
+
+	function onStart() {
+
+		sniffer.getHtml(function(html) {
+
+			if(!getId(html)) { 
+				return;
+			}
+
+			var url = 'http://cache.video.qiyi.com/m/' + iqiyi_id + '/';
+			sniffer.getText(url, 'text', function(data) {
+
+				try
+				{
+					eval(data);
+
+					// mp4
+					if(sniffer.checkStr(ipadUrl.data.mp4Url)) {
+						sniffer.getText(ipadUrl.data.mp4Url, 'text', function(data) {
+							eval(data);
+							sniffer.success(videoUrl.data.l);
+						});
+
+					// m3u8
+					} else if(sniffer.checkStr(ipadUrl.data.url)) {
+						sniffer.success(ipadUrl.data.url);
+
+					} else {
+						sniffer.fail('invald ipadUrl.data.mp4Url or ipadUrl.data.url');
+					}
+				}
+				catch (e)
+				{
+					sniffer.exception(e);
+					sniffer.fail('invalid text');
+				}
+			});
+		});
+	}
+
+	function getId(html) {
+		
+		sniffer.getScript(html, function(script) {
+
+			try
+			{
+				eval(script);
+			}
+			catch (e)
+			{
+			}
+
+			if(typeof info == 'undefined') {
+
+				return false;
+			} else {
+
+				iqiyi_id = info.videoId;
+				return true;
+			}
+		}, '<script type="text/javascript">');
+
+		if(sniffer.checkStr(iqiyi_id)) {
+			return true;
+		} else {
+			sniffer.fail('cannot found id');
+			return false;
+		}
+	}
+
+	var iqiyi_id = null;
+
+ </SCRIPT>
+</HTML>

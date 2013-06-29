@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/brow_dialog_tip_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/baidu_service_gridview_column_width"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/browser_sniffer_tip"
+    android:orientation="horizontal"
+    >
+    
+    <TextView 
+        android:id="@+id/brow_dialog_tip_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:layout_weight="1"
+        android:text="检测到500个剧集资源，点此查看列表"
+        android:textColor="@android:color/white"
+		android:layout_marginLeft="5.0dip"
+        android:textSize="16sp"/>
+    
+    <ImageView 
+        android:id="@+id/brow_dialog_tip_close"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="9"
+        android:src="@drawable/brow_dialog_tip_close"
+        android:layout_marginRight="5.0dip"
+        />
+    
+</LinearLayout>

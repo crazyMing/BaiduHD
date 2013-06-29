@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/listview_normal_item_bg"
+    android:gravity="center_vertical" >
+
+    <!-- 删除选择按钮 -->
+    <ImageView
+        android:id="@+id/common_task_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:background="@color/background_white"
+        android:clickable="false"
+        android:src="@drawable/ic_list_check_off"
+        android:visibility="gone" />
+
+    <!-- 右边layout 包括分隔线、下载状态 -->
+    
+   <LinearLayout
+       android:id="@+id/common_task_rigth_layout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_centerVertical="true"
+       android:clickable="true"
+       android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/divide_line"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/ic_list_right_divide"
+            android:clickable="false" />
+
+         <!-- #fff0e8d3 -->
+	    <ImageView
+	        android:id="@+id/common_task_status"
+	        android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	        android:layout_marginRight="10.0dip"
+	        android:layout_marginTop="15.0dip"
+	        android:layout_marginBottom="15.0dip"
+	        android:layout_gravity="center_vertical"
+	        android:clickable="false"
+	        android:src="@drawable/ic_list_start" />
+	</LinearLayout>
+	
+   <!-- 中间layout 包括进度条、两行文字 -->
+
+    <RelativeLayout
+        android:id="@+id/common_task_center_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_toLeftOf="@id/common_task_rigth_layout"
+        android:layout_toRightOf="@id/common_task_delete"
+        android:gravity="left"
+        android:orientation="vertical" >
+		
+        <ProgressBar 
+		     android:id="@+id/common_task_progressbar"
+		     style="?android:attr/progressBarStyleHorizontal"
+		     android:layout_width="fill_parent"
+		     android:layout_height="8.0dip"
+		     android:layout_marginTop="40.0dip"
+		     android:max="100"
+		     android:progressDrawable="@drawable/download_pb"
+		     />
+           
+        <RelativeLayout
+            android:id="@+id/common_task_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="55.0dip"
+            android:duplicateParentState="true" 
+            >
+
+            <TextView
+                android:id="@+id/common_task_submit_left_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/normal_textcolor_gray"
+                android:textSize="12.0sp"
+                android:text="@string/app_name" />
+			
+            <TextView
+                android:id="@+id/common_task_submit_right_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0MB"
+                android:textColor="@color/normal_textcolor_gray"
+                android:textSize="12.0sp" 
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="toolbar_gradient_start_color">#33353c</color>
+    <color name="toolbar_gradient_end_color">#272830</color>
+    
+    <!-- 地理位置信息设置框用到的颜色值 -->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="geolocation_permissions_prompt_background">#ffdddddd</color>
+    
+    <color name="ssl_text_label">#ffffffff</color>
+    <!-- 垂搜分类面板网格线的颜色值 -->
+    <color name="grid_left_edge">#e5ffffff</color>
+    <color name="grid_top_edge">#e5ffffff</color>
+    <color name="grid_right_edge">#14000000</color>
+    <color name="grid_bottom_edge">#14000000</color>
+    
+    <color name="button_text_color">#ff333333</color>
+    <color name="title_text_color">#000000</color>
+    
+    <!-- 数字时钟上用到的颜色值 -->
+    <color name="digital_clock_time_textcolor">#ff202020</color>
+    
+    <drawable name="SettingsActivityBackGround">#ffffffff</drawable>
+    <drawable name="null_drawable">#00000000</drawable>
+    
+    <drawable name="search_bg_normal">#00000000</drawable>
+    <drawable name="search_bg_press">#33000000</drawable>
+    
+    <drawable name="transparent_drawable">#00ffffff</drawable>
+    
+    <!-- 长按弹出菜单 -->
+    <color name="popmenu_textcolor">#ffffffff</color>
+    
+    <!-- 错误页面按钮颜色 -->
+    <color name="browser_error_page_button_text_color">#ff222222</color>
+    <!-- 错误页面按钮颜色 -->
+    <color name="window_background_color">#fff4f4f4</color>
+    
+    <!-- 添加/编辑导航UI的颜色 -->
+    <color name="navigator_input_label">#565656</color>
+    <color name="navigator_input_hint">#cecece</color>
+    
+    <color name="navigator_category_header_text">#565656</color>
+    <color name="navigator_category_dash_line">#e1e1e1</color>
+    
+    <color name="navigator_item_label">#222222</color>
+    <color name="navigator_item_url">#777777</color>
+    
+    <color name="navigator_disable">#cecece</color>
+    
+    <color name="disable">#ffcecece</color>
+    <color name="enable">#ff222222</color>
+    
+    <!-- 导航区（九宫格）相关的颜色 -->
+    <drawable name="navigation_menu_item_bg_press">#4297ff</drawable>
+    
+    <color name="add_ding_text_color">#222222</color>
+    
+    <color name="sug_local_setting_text_color_normal">#626262</color>
+    
+    <color name="sug_local_setting_text_color_press">#FFFFFF</color>
+    
+    <drawable name="spinner_dropdown_item_bg_pressed">#e5e5e5</drawable>
+    <drawable name="spinner_dropdown_item_bg_normal">#ffffff</drawable>
+    
+    <drawable name="bookmarkdir_item_bg_normal">#ffffff</drawable>
+    <drawable name="bookmarkdir_item_bg_pressed">#62A7FF</drawable>
+    
+    <!-- 个人中心 add by sunjianshun 2012.10.25 -->
+    <color name="title_bar_background">#f4f4f4</color>
+    <color name="page_edit_bar_background">#f2f2f2</color>
+    
+    <color name="text_color_white">#ffffffff</color>
+    <color name="button_white_text_normal">#ff333333</color>
+    <color name="button_white_text_disable">#ffd2d2d2</color><!-- ffd2d2d2 -->
+    <color name="button_blue_text_normal">#ffffffff</color>
+    <color name="button_blue_text_disable">#ff9ac0f4</color>
+    <color name="background_web_light_gray">#fffafafa</color>
+    <color name="listview_description_text">#ff545454</color>
+    <color name="listview_normal_divide">#ffe7e7e7</color>
+    <color name="listview_normal_bg">#fffafafa</color>
+    <color name="listview_normal_press">#fff5f5f5</color>
+    
+    <!-- baidupalyer -->
+    <color name="checkbox_textcolor_black">#ff545454</color>
+    <color name="background_transparent">#00000000</color>
+    <color name="text_color_gray_black">#cc000000</color>
+    <color name="normal_textcolor_black">#ff333333</color>
+    <color name="transparent_background">#00000000</color>
+    
+    <!-- BDPlayer Settings-->
+    <!-- Settings -->
+    <color name="settings_bg">#fffafafa</color>
+    <color name="settings_item_divide">#ffe7e7e7</color>
+    <color name="settings_title_bg">#ffefefef</color>
+    <color name="settings_title_divide">#ffcbcbcb</color>
+    <color name="settings_about_bg">#ffefefef</color>
+    <color name="settings_about_text_black">#ff545454</color>
+    <color name="settings_about_text_gray">#ff969696</color>
+    <color name="settings_feedback_bg">#fffafafa</color>
+    <color name="settings_feedback_text_black">#ff545454</color>
+    <color name="settings_feedback_text_deepblack">#ff333333</color>
+    
+    <!-- 播放中剧集列表 -->
+    <color name="player_playlist_text_color">#969696</color>
+
+    <!-- 搜索框的颜色值 -->
+    <color name="searchbox_gradient_start_color">#ebedf0</color>
+    <color name="searchbox_gradient_end_color">#e3e6ed</color>
+    
+    <!-- other -->
+    <color name="background_white">#ffffffff</color>
+    <color name="normal_textcolor_gray">#ff969696</color>
+    <color name="normal_textcolor_red">#ffff0000</color>
+    <color name="player_box_text_color">#565656</color>
+    
+    <!-- 错误页面文字颜色 -->
+    <color name="browser_error_page_text_color">#999999</color>
+    <color name="browser_error_page_button_color">#333333</color>
+    <color name="refurbish_button_color">#105dc5</color>
+    
+    <!-- 多窗口 --> 
+    <color name="multiwindow_item_title_color">#ffffff</color>
+    <color name="multiwindow_item_description_color">#a6a6a6</color>
+    <color name="multiwindow_item_current_color">#62A7FF</color>
+    
+    <color name="transparent">#50000000</color>
+</resources>

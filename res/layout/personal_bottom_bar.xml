@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personal_bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_toolbar_height"
+    android:orientation="horizontal"
+    android:background="#333333" >
+
+    <!-- 返回 -->
+    <ImageButton
+        android:id="@+id/personal_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:background="@drawable/personal_bottom_bar_button_background_selector"
+        android:src="@drawable/personal_bottom_bar_button_back_selector" />
+    
+	<ImageView android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:src="@drawable/personal_bottom_bar_bacground_divider"
+	    android:layout_toRightOf="@id/personal_back"/>
+    
+    <!-- 编辑/完成 -->
+    <ImageButton 
+        android:id="@+id/personal_edit_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:background="@drawable/personal_bottom_bar_button_background_selector"
+        android:src="@drawable/personal_bottom_bar_button_edit_selector"
+        android:layout_centerVertical="true"/>
+    
+    <ImageView 
+        android:id="@+id/personal_bottom_before_edit_button_divider"
+        android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:src="@drawable/personal_bottom_bar_bacground_divider"
+	    android:layout_toLeftOf="@id/personal_edit_complete"/>
+    
+    <!-- 全部开始/全部暂停 -->
+    <ImageButton 
+        android:id="@+id/personal_all_start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:layout_toLeftOf="@id/personal_bottom_before_edit_button_divider"
+        android:background="@drawable/personal_bottom_bar_button_background_selector"
+        android:src="@drawable/personal_bottom_bar_button_download_selector"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+    
+    <!-- 导入 -->
+    <ImageButton 
+        android:id="@+id/personal_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:layout_toLeftOf="@id/personal_all_start_pause"
+		android:background="@drawable/personal_bottom_bar_button_background_selector"
+        android:src="@drawable/personal_bottom_bar_button_import_selector"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+    
+    <!-- 刷新 -->
+    <ImageButton 
+        android:id="@+id/personal_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:layout_toLeftOf="@id/personal_import"
+        android:background="@drawable/personal_bottom_bar_button_background_selector"
+        android:src="@drawable/personal_bottom_bar_button_refresh_selector"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

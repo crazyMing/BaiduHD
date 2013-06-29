@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <SCRIPT src="../jquery.js"></SCRIPT>
+  <SCRIPT src="../sniffer.js"></SCRIPT>
+ </HEAD>
+
+ <SCRIPT>
+
+ sniffer.siteName = 'yinyuetai';
+
+	function onStart() {
+
+		sniffer.getHtml( function(html) {
+
+			var src = getSrc(html);
+			if(!sniffer.checkStr(src)) {
+				sniffer.fail('not found src');
+				return;
+			}
+			sniffer.success(src);
+		});
+	}
+
+	function getSrc(html) {
+
+		var start = html.indexOf('<video');
+		if(start == -1) {
+			return null;
+		}
+
+		var end = html.indexOf('</video>');
+		if(end == -1) {
+			return null;
+		}
+
+		html = html.substr(start, end - start);
+		start = html.indexOf('src="');
+		if(start == -1) {
+			return null;
+		}
+		start += 5;
+
+		end = html.indexOf('"', start);
+		if(end == -1) {
+			return null;
+		}
+
+		return html.substr(start, end - start - 1);
+	}
+
+ </SCRIPT>
+</HTML>

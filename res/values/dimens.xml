@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="float_searchbox_height">48dip</dimen>
+	<dimen name="browser_float_searchbox_shadow">2dip</dimen>
+	<dimen name="browser_float_toolbar_shadow">2dip</dimen>
+	<dimen name="bottom_toolbar_height">47dip</dimen>
+	<dimen name="browser_progress_bar_height">6dip</dimen>
+	<dimen name="checkmark_area">40dip</dimen>
+	<dimen name="about_margin_vertical">12dip</dimen>
+	<dimen name="about_margin_horizontal">13dip</dimen>
+	<dimen name="workspace_dot_margin">5dip</dimen>
+	<dimen name="browseraddview_height">126dip</dimen>
+	<dimen name="clear_content_icon_size">30dip</dimen>
+	<dimen name="popup_window_padding">32dip</dimen>
+	<dimen name="newding_pop_in_home_top">42dip</dimen>
+	<dimen name="tips_width">82dip</dimen>
+	<dimen name="newding_pop_in_home_right">6.6dip</dimen>
+	<dimen name="digital_clock_time_margin_top">0dip</dimen>
+    <dimen name="digital_clock_time_margin_left">12dip</dimen>
+    <dimen name="digital_clock_time_margin_right">12dip</dimen>
+    <dimen name="digital_clock_time_divider_top">39.3dip</dimen>
+    
+    <dimen name="digital_clock_time_width">68dip</dimen>
+    <dimen name="digital_clock_time_height">82.6dip</dimen>
+    <dimen name="digital_clock_time_height_half">40dip</dimen>
+    <dimen name="digital_clock_time_textsize">56dip</dimen>
+    <dimen name="digital_clock_time_textoffset">3dip</dimen>
+    
+    <dimen name="about_product_more">48dip</dimen>
+    
+    <dimen name="grid_column_width">74dip</dimen>
+    <dimen name="sug_item_head_icon_width">33.3dip</dimen>
+    <dimen name="sug_item_head_icon_height">33.3dip</dimen>
+    <dimen name="sug_item_head_icon_default_left">0dip</dimen>
+    <dimen name="sug_item_head_icon_default_top">0dip</dimen>
+    
+    <dimen name="context_menu_item_tv_font_size">19dip</dimen>
+    
+    <dimen name="ding_manager_item">45.3dip</dimen>
+    <dimen name="ding_manager_button_add_more">47.3dip</dimen>
+    
+    <dimen name="baidu_service_gridview_column_width">60dip</dimen>
+    <dimen name="baidu_service_gridview_horizontal_spacing">1.3dip</dimen>
+    <dimen name="baidu_service_gridview_margin_left">7.3dip</dimen>
+    <dimen name="baidu_service_gridview_margin_right">7.3dip</dimen>
+    <dimen name="website_padding_left">13.3dip</dimen>
+    <dimen name="website_padding_right">16.3dip</dimen>
+    
+    <dimen name="navigation_gridview_margin_left">1dip</dimen>
+    <dimen name="navigation_gridview_margin_right">1dip</dimen>
+    <dimen name="navigation_gridview_margin_top">-6.6dip</dimen>
+    <dimen name="navigation_gridview_margin_bottom">0.6dip</dimen>
+    <dimen name="navigation_gridview_column_width">97.3dip</dimen>
+    <dimen name="navigation_gridview_column_height">71.3dip</dimen>
+    <dimen name="navigation_gridview_horizontal_spacing">6.6dip</dimen>
+    <dimen name="navigation_gridview_vertical_spacing">6dip</dimen>
+    
+    <dimen name="navigation_gridview_item_padding_left">12dip</dimen>
+    <dimen name="navigation_gridview_item_padding_right">12dip</dimen>
+    <dimen name="navigation_gridview_item_padding_top">13.3dip</dimen>
+    <dimen name="navigation_gridview_item_padding_bottom">7dip</dimen>
+    
+    <dimen name="navigation_gridview_item_drawable_width">73.3dip</dimen>
+    <dimen name="navigation_gridview_item_drawable_height">26.6dip</dimen>
+    
+    <dimen name="navigation_gridview_screem_divider_height">5dip</dimen>
+    
+    <dimen name="multiwindow_tab_margin">5dip</dimen>
+    <dimen name="home_menu_padding_right">20dip</dimen>
+    <dimen name="home_menu_padding_bottom">48dip</dimen>
+    
+    <dimen name="searchbox_searchplate_shadow_lenth">2dp</dimen>
+    <!-- ding B部分距顶部的距离，值为ding a部分减去阴影高度，实现ding b部分盖住阴影的效果 -->
+    <dimen name="dingview_part_b_top_margin">121dip</dimen>
+    
+    <dimen name="dingview_extension_height">8dip</dimen>
+    
+    <dimen name="half_screen_width">160dip</dimen>
+    
+    <!-- baiduplayer -->
+    <dimen name="dialog_button_height">45.0dip</dimen>
+    <dimen name="text_size_large">20.0sp</dimen>
+    <dimen name="edit_letter_margin_right">7dip</dimen>
+    <dimen name="titlebar_submit_margin_left">7dip</dimen>
+    <dimen name="sniffer_text_size">10dip</dimen>
+    
+    <dimen name="home_player_websites_item_height">50dip</dimen>
+    <dimen name="home_player_websites_min_height">120dip</dimen>
+    
+	<!-- 进度条偏移量 -->
+	<dimen name="browser_progressbar_offset">4dip</dimen>
+	
+	<dimen name="multi_window_item_height">60dip</dimen>
+	
+	<!-- 首页导航栏高度，横屏为1行，竖屏2行，所以高度值不同 -->
+	<dimen name="home_navigation_panel_height">262dip</dimen>
+	
+	<dimen name="home_navigation_item_image_height">105dip</dimen>
+	
+	<dimen name="home_navigation_item_iamge_width">110dip</dimen>
+	
+	<dimen name="home_navigation_item_height">125dip</dimen>
+	
+	<dimen name="home_navigation_image_default_width">96dip</dimen>
+	
+	<dimen name="home_navigation_image_default_height">120dip</dimen>
+	
+	<!-- 首页列表项高度 -->
+	<dimen name="home_recommended_height">45dip</dimen>
+	<dimen name="home_navigation_text_size">16dip</dimen>	
+	
+	<dimen name="native_baidu_search_margins_bottom">-200dip</dimen>
+</resources>

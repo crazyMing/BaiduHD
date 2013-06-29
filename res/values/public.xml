@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!--  
+    <public type="drawable" name="APKTOOL_DUMMY_003e" id="0x7f02003e" />
+    <public type="mipmap" name="search_app_icon" id="0x7f030000" />
+    <public type="layout" name="web_search_suggestion" id="0x7f040013" />
+    <public type="anim" name="fade_in_fast" id="0x7f050000" />
+    <public type="animator" name="remove_from_history_appear" id="0x7f060000" />
+    <public type="xml" name="google_search_preferences" id="0x7f070000" />
+    <public type="color" name="search_plate_background" id="0x7f080000" />
+    <public type="integer" name="remove_from_history_button_delay" id="0x7f090019" />
+    <public type="bool" name="show_zero_query_suggestions" id="0x7f0a0000" />
+    <public type="string" name="license_activity_unavailable" id="0x7f0b0043" />
+    <public type="array" name="google_search_paths" id="0x7f0c0000" />
+    <public type="dimen" name="suggestion_view_height" id="0x7f0d0001" />
+    <public type="style" name="Suggestion" id="0x7f0e0000" />
+    <public type="menu" name="help" id="0x7f0f0000" />
+    <public type="id" name="menu_settings" id="0x7f100030" />
+    -->
+    
+    <!-- 
+        fix bug: SEARHBOX-588 【百合】覆盖安装0.8版本，已添加的dingwidget，出现UI异常
+                应该有固定的layout id与一期的ding layout保持一致，
+                否则，覆盖安装新版后，遗留的一期widget会根据自身存储的layout id随机对应新版的layout，导致UI混乱
+    -->
+    
+</resources>

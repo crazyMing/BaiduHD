@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <SCRIPT src="../jquery.js"></SCRIPT>
+  <SCRIPT src="../sniffer.js"></SCRIPT>
+ </HEAD>
+
+ <SCRIPT>
+
+	sniffer.siteName = 'qq';
+
+	function onStart() {
+
+		sniffer.getHtml(function(html) {
+
+			if(!getId(html)) { 
+				return;
+			}
+
+			var url = 'http://vv.video.qq.com/geturl?otype=json&vid=' + qq_id;
+			sniffer.getText( url, 'text', function(data) {
+
+				try
+				{
+					eval(data);
+					sniffer.success(QZOutputJson.vd.vi[0].url);
+				}
+				catch (e)
+				{
+					sniffer.exception(e);
+					sniffer.fail('invalid text');
+				}
+			});
+		});
+	}
+
+	function getId(html) {
+
+		sniffer.getScript(html, function(script) {
+
+			try
+			{
+				eval(script);
+			}
+			catch (e)
+			{
+			}
+
+			if(qq_id == null) {
+				return false;
+			} else {
+				return true;
+			}
+		}, '<script language="javascript">');
+
+		if(sniffer.checkStr(qq_id)) {
+			return true;
+		} else {
+			sniffer.fail('cannot found id');
+			return false;
+		}
+	}
+
+	var qq_id = null;
+
+	var timePoints = new Array();
+
+	var txv = {playpg:{init: function(json) {
+		qq_id = json.videoinfo.vid;
+	}}};
+
+	function _ssuccess() {}
+
+	var LazyLoad = {js: function(a, initCallback){
+		initCallback();
+	}};
+
+ </SCRIPT>
+</HTML>

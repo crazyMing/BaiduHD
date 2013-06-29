@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="#262626"
+    android:id="@+id/palyer_cache_error"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:visibility="gone">
+    
+
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/toolbar_videoplayer"
+        android:gravity="center_vertical">
+        
+        <ImageView 
+            android:id="@+id/chcheview_back_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="13.0dip"
+            android:src="@drawable/titlebar_return_normal"
+            android:clickable="true"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:id="@+id/player_cache">
+        
+        <TextView 
+            android:id="@+id/chcheview_text_name"
+            android:layout_width="wrap_content"	
+            android:layout_height="30.0dip"
+            android:layout_marginTop="28.0dip"
+            android:textSize="20.0sp"
+            android:singleLine="true"
+            android:textColor="#ffffffff"/>
+        
+        <TextView
+            android:id="@+id/chcheview_text_orignal"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="8.0dip"
+            android:textSize="15.0sp"
+            android:singleLine="true"
+            android:textColor="#ffffffff"/>
+        
+        <ProgressBar
+            android:id="@+id/chcheview_prpare"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:indeterminate="true"
+	    	android:indeterminateDrawable="@anim/buffering_dark_rotate"
+            android:visibility="visible" />
+        
+        <TextView
+            android:id="@+id/chcheview_text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:textSize="13.0sp"
+            android:singleLine="true"
+            android:textColor="#ffffffff"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        android:id="@+id/player_error">
+        
+        <TextView 
+            android:id="@+id/error_text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60.0dip"
+            android:textSize="20.0sp"
+            />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40.0dip">
+        
+	        <Button
+	            android:id="@+id/error_btn_retry"
+	            android:layout_width="100.0dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/dialog_retry_button"
+	            android:textSize="22.0sp"
+	            android:textColor="#ffffffff"
+	            android:background="@drawable/button_error_gray"
+	           	
+	            />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

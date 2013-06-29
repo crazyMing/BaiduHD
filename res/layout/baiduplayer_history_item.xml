@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/listview_normal_item_bg"
+    android:gravity="center_vertical" >
+
+    <!-- History Delete ImageView -->
+    
+    <ImageView
+        android:id="@+id/history_item_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:background="@color/background_white"
+        android:clickable="false"
+        android:src="@drawable/ic_list_check_off"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name" />
+
+    
+    <!-- History Thumbnail -->
+
+    <ImageView
+        android:id="@+id/history_item_thumbnail"
+        android:layout_width="72dip"
+        android:layout_height="96dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@id/history_item_delete"
+        android:background="#8c8c8c"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"
+         />
+    <!-- android:src="@drawable/album" -->
+    
+    <!-- History Right Layout -->
+    
+    <LinearLayout
+        android:id="@+id/history_item_rigth_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"        
+        android:orientation="horizontal"
+        android:clickable="true" 
+        >
+        <ImageView
+	        android:id="@+id/divide_line"
+	        android:layout_width="1.0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginBottom="10dip"
+	        android:layout_marginRight="10.0dip"
+	        android:clickable="false"
+	        android:background="@drawable/ic_list_right_divide"
+	        android:contentDescription="@string/app_name"
+	        />
+         <!-- #fff0e8d3 -->
+	    <ImageView
+	        android:id="@+id/history_item_status"
+	        android:layout_width="wrap_content"
+	       	android:layout_height="fill_parent"
+	        android:layout_marginRight="10.0dip"
+	        android:layout_gravity="center_vertical"
+	        android:clickable="false"
+	        android:src="@drawable/ic_list_details"
+	        android:contentDescription="@string/app_name" />
+	</LinearLayout>
+    
+    <!-- History Center Layout -->
+     
+    <LinearLayout
+        android:id="@+id/history_item_center_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/history_item_thumbnail"
+        android:layout_toLeftOf="@id/history_item_rigth_layout"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <com.baidu.hd.ctrl.AlwaysMarqueeTextView
+            android:id="@+id/history_item_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ff333333"
+            android:textSize="16.0sp"
+            android:text="@string/app_name" />
+        
+        <com.baidu.hd.ctrl.AlwaysMarqueeTextView
+            android:id="@+id/history_item_title_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ff545454"            
+            android:textSize="14.0sp"
+            android:text="@string/app_name" />
+        
+        <RelativeLayout
+            android:id="@+id/history_item_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:duplicateParentState="true" >
+
+            <TextView
+                android:id="@+id/history_item_submit_left_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#ff969696"
+                android:textSize="12.0sp"
+                android:text="@string/app_name"
+                android:drawableLeft="@drawable/ic_history_item" />
+            
+            <ImageView
+		        android:id="@+id/history_item_submit_left_info_icon"
+		        android:layout_width="wrap_content"
+		       	android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_toRightOf="@id/history_item_submit_left_info"
+		        android:layout_marginLeft="5.0dip"
+		        android:src="@drawable/ic_list_history_new"
+		        android:contentDescription="@string/app_name" />
+			
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

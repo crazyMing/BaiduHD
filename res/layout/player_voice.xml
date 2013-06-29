@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="73dp"
+    android:layout_height="174dp"
+    android:orientation="vertical"
+    android:background="#44444444" 
+    android:gravity="center"
+    android:padding="6dp"
+    >
+    
+    <com.baidu.hd.ctrl.VerticalSeekBar
+        android:id="@+id/seekbar_voice"
+        android:layout_width="33.0dip"
+        android:layout_height="wrap_content"
+        android:maxHeight="6.0dip"
+        android:minHeight="6.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:progressDrawable="@drawable/seekbar_sound_style"
+        android:thumb="@drawable/common_progressbar_sound_normal"
+        android:thumbOffset="12.0dip" />
+
+</LinearLayout>
